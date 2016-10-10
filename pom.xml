@@ -25,6 +25,13 @@
         <connection>${git.scm.url}</connection>
     </scm>
 
+    <repositories>
+        <repository>
+            <id>beligum-open</id>
+            <url>http://maven.beligum.com/content/groups/public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.beligum.blocks</groupId>
