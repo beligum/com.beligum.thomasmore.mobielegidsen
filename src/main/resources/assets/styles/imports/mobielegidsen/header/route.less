@@ -1,0 +1,55 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----STYLES-----
+mobielegidsen-header-route {
+  .row {
+    @lineHeight: 30px;
+
+    font-family: nunitoblack, arial, sans-serif;
+    font-size: 18px;
+    color: @buttonTextColor;
+
+    background-color: @themeBgColor;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .back {
+      line-height: @lineHeight;
+      text-align: left;
+      a {
+        .back();
+        vertical-align: middle;
+      }
+    }
+    .name {
+      display: inline-block;
+      max-width: 100%;
+      line-height: @lineHeight;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      //the editor tends to insert elements...
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .icon {
+      text-align: right;
+      .fa {
+        border-radius: 50%;
+        width: @lineHeight;
+        height: @lineHeight;
+        font-size: @lineHeight - 10px;
+        line-height: @lineHeight;
+        background-color: #FFFFFF;
+        color: @themeBgColor;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}

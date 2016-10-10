@@ -1,0 +1,145 @@
+#define($header-styles-extra)
+<link href="/assets/webjars/video-js/5.8.8/video-js.css" rel="stylesheet" type="text/css">
+<link href="/assets/libs/video.js/skins/sublime.css" rel="stylesheet" type="text/css">
+<link href="/assets/libs/video.js/skins/sublime-edits.less" rel="stylesheet" type="text/css">
+
+<link href="/assets/styles/site-index.less" rel="stylesheet" type="text/css">
+#end
+
+#define($header-scripts-extra)
+<script src="/assets/webjars/video-js/5.8.8/ie8/videojs-ie8.js"></script>
+#end
+
+#define($footer-scripts-extra)
+<script src="/assets/webjars/video-js/5.8.8/video.js"></script>
+<script src="/assets/scripts/video.js"></script>
+<script src="/assets/scripts/main.js" type="application/javascript"></script>
+#end
+
+#define($body-args-extra)
+#end
+
+#define($body-html)
+
+<div class="container">
+
+    <div class="row teaser">
+        <div class="header-text">
+            <p>Ontdek</p>
+            <h1>$region.name</h1>
+        </div>
+
+        <div class="col-xs-12 embed-responsive embed-responsive-16by9">
+            ## Note: don't add a "embed-responsive-item" class because our video player will pull it to the wrapper div and bootstrap will get confused
+            ##       in the end, it will display ok anyway, because bootstrap uses the rule ".embed-responsive video" as well (next to .embed-responsive-item)
+            <video class="hidden-xs hidden-sm video-js vjs-sublime-skin" autoplay loop preload="auto" poster="$region.video.poster">
+                <source src="$region.video.url" type="video/mp4">
+                <div class="vjs-no-js">
+                    <p>
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://caniuse.com/video" target="_blank">supports HTML5 video</a>
+                    </p>
+                    <p>
+                        Alternatively, you can try to <a href="$region.video.url" target="_blank">download</a> the video directly.
+                    </p>
+                </div>
+            </video>
+            <img class="hidden-md hidden-lg img-responsive embed-responsive-item" src="$region.video.poster">
+        </div>
+    </div>
+
+    <div class="row introduction">
+        <div class="col-md-offset-1 col-md-10 col-sm-12">
+            <h2>$region.tagline</h2>
+            <p>$region.introduction</p>
+        </div>
+    </div>
+
+    <div class="row quote">
+        <img src="$region.quoteImage.url" class="img-responsive">
+        <h2><i class="fa fa-quote-left"></i> $region.quote <i class="fa fa-quote-right"></i></h2>
+    </div>
+
+    <div class="row routes">
+        <div class="col-xs-12 header">
+            <h2>Ontdek onze routes</h2>
+            <p>Plan nu één van je routes</p>
+        </div>
+        <div class="col-xs-12 overview">
+            #foreach($route in $region.routes)
+                <div class="route $route.color">
+                    <img src="$route.poster" class="img-responsive" alt="$route.name">
+                    <div class="caption">
+                        <h3>$route.name</h3>
+                        <p>$route.introduction</p>
+                        <a href="/route/$route.slug">ontdek deze route</a>
+                    </div>
+                </div>
+            #end
+        </div>
+    </div>
+
+    <div class="row hr">
+        <div class="seg1"></div>
+        <div class="seg2"></div>
+        <div class="seg3"></div>
+        <div class="seg4"></div>
+        <div class="seg5"></div>
+        <div class="seg6"></div>
+    </div>
+
+    <div class="row partners">
+        <div class="header">
+            <h2>In samenwerking met</h2>
+        </div>
+        <div class="grid">
+            <a href="http://www.memori.be" target="_blank">
+                <img src="/assets/images/site/partners/logo-memori.png" alt="Memori" class="img-responsive">
+            </a>
+            <a href="http://www.provincieantwerpen.be" target="_blank">
+                <img src="/assets/images/site/partners/logo-antwerpen.png" alt="Provincie Antwerpen" class="img-responsive">
+            </a>
+            <a href="http://www.thomasmore.be" target="_blank">
+                <img src="/assets/images/site/partners/logo-thomasmore.png" alt="Thomas More" class="img-responsive">
+            </a>
+            <a href="http://www.iminds.be" target="_blank">
+                <img src="/assets/images/site/partners/logo-iminds.png" alt="Iminds" class="img-responsive">
+            </a>
+            <a href="http://www.iwt.be" target="_blank">
+                <img src="/assets/images/site/partners/logo-iwt.png" alt="IWT" class="img-responsive">
+            </a>
+            <a href="http://www.deschorre.be/" target="_blank">
+                <img src="/assets/images/site/partners/logo-schorre.png" alt="De Schorre" class="img-responsive">
+            </a>
+            <a href="http://www.toerismerupelstreek.be/" target="_blank">
+                <img src="/assets/images/site/partners/logo-rupelstreek.png" alt="Toerisme De Rupelstreek" class="img-responsive">
+            </a>
+            <a href="http://www.toerismerupelstreek.be/" target="_blank">
+                <img src="/assets/images/site/partners/logo-rupelstreek2.png" alt="De Rupelstreek" class="img-responsive">
+            </a>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-xs-12 primary">
+            <p class="header">Deel ons op</p>
+            <div class="buttons">
+                #set($smCurrUrl=$TOOLKIT.esc.url($REQUEST.uriInfo.requestUri))
+                ##set($smCurrUrl=$TOOLKIT.esc.url('http://rupelstreek.mobielegidsen.be/'))
+                #set($smPopupWidth=626)
+                <a href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://www.facebook.com/sharer/sharer.php?u=$smCurrUrl', 'Deel $region.name op Facebook', '$smPopupWidth', '650'); return false;"><i class="fa fa-facebook-official fa-3x social-footer"></i></a>
+                <a href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://twitter.com/intent/tweet?url=$smCurrUrl&hashtags=mobielegidsen%2C$region.slug&text=', 'Deel $region.name op Twitter', '$smPopupWidth', '300'); return false;"><i class="fa fa-twitter-square fa-3x social-footer"></i></a>
+            </div>
+        </div>
+
+##        <div class="col-xs-12 secondary">
+##            <p class="header">Made with <i class="fa fa-heart fa-1x"></i> in Belgium</p>
+##            <p class="copyright"><i class="fa fa-copyright"></i> Thomas More</p>
+##        </div>
+    </div>
+
+</div>
+
+#end
+
+#parse("/templates/main.html")

@@ -1,0 +1,48 @@
+#define($header-styles-extra)
+<link href="/assets/styles/route-overview.less" rel="stylesheet" type="text/css">
+#end
+
+#define($header-scripts-extra)
+#end
+
+#define($footer-scripts-extra)
+#end
+
+#define($body-args-extra)
+#end
+
+#define($body-html)
+
+
+<div class="container">
+
+    <div class="row header-wrapper">
+        <div class="col-xs-2 back">
+            <a href="/route/$route.slug"><i class="fa fa-chevron-left prev-btn"></i></a>
+        </div>
+        <div class="col-xs-8 name">$route.name</div>
+    </div>
+
+    <div class="row nav-wrapper">
+##        <div class="col-xs-6">
+##            <a class="btn btn-link" href="/route/$route.slug/overview">route<i class="fa fa-sort-amount-asc"></i></a>
+##        </div>
+        <div class="col-xs-12">
+            <a class="btn btn-link" href="/route/$route.slug/map"><i class="fa fa-map-o"></i> Bekijk de kaart</a>
+        </div>
+    </div>
+
+    <div class="stops-wrapper">
+        #foreach( $stop in $route.stops )
+            <a href="/route/$route.slug/$stop.slug" class="row row-eq-height stop">
+                <div class="col-xs-3 type"><i class="fa fa-map-marker"></i></div>
+                <div class="col-xs-9 description">$stop.title</div>
+            </a>
+        #end
+    </div>
+
+</div>
+
+#end
+
+#parse("/templates/main.html")

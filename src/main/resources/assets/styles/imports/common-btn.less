@@ -1,0 +1,31 @@
+.btn,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  .border-radius(0, 0, 0, 0) !important;
+  .box-shadow(none) !important;
+  display: inline-block;
+  width: 100%;
+  font-family: nunitobold, arial, sans-serif;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+
+  color: @themeBgColor;
+  background-color: @buttonTextColor;
+  border: none;
+
+  &:focus,
+  &.active:focus,
+  &:active:focus {
+    outline: none;
+  }
+
+  .fa {
+    font-size: 24px;
+  }
+  .show-route-btn {
+    display: none
+  }
+}

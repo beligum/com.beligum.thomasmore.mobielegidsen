@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="numbered.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="433.70648"
+     inkscape:cy="316.74438"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-3"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       y="715.58124"
+       x="460.71429"
+       id="image2993"
+       xlink:href="file:///home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/default/marker-icon-2x.png"
+       height="82"
+       width="50"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/9/marker-icon-2x.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <image
+       y="756.58124"
+       x="372.86255"
+       id="image3004"
+       xlink:href="file:///home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/default/marker-icon.png"
+       height="41"
+       width="25"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/9/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e2f1ff;fill-opacity:1;stroke:none;font-family:DIN;-inkscape-font-specification:DIN Ultra-Light"
+       x="384.78442"
+       y="786.85211"
+       id="text3007"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3009"
+         x="384.78442"
+         y="786.85211"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#e2f1ff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold">9</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3790"
+       y="775.24493"
+       x="485.5242"
+       style="font-size:37.39130402px;font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#e2f1ff;fill-opacity:1;stroke:none;font-family:DIN;-inkscape-font-specification:DIN Ultra-Light"
+       xml:space="preserve"><tspan
+         style="font-size:22.43478394px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#e2f1ff;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         y="775.24493"
+         x="485.5242"
+         id="tspan3792"
+         sodipodi:role="line">9</tspan></text>
+  </g>
+</svg>

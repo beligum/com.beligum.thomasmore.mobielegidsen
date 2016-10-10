@@ -1,0 +1,38 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----STYLES-----
+blocks-text {
+
+  .@{TEXT_STYLES_COLOR_CLASS} {
+    color: @routeColor1;
+  }
+  .@{TEXT_STYLES_COLOR_CLASS} {
+    color: @routeColor1;
+  }
+  .@{TEXT_STYLES_COLOR_CLASS} {
+    color: @routeColor1;
+  }
+  // note that the editor will always set this class on a container wrapper element (like a <p>)
+  // so it's save to set the css on the child <a> element
+  .@{TEXT_STYLES_BUTTONS_BIG_CLASS} {
+    a, a:visited {
+
+      display: inline-block;
+      color: @routeColor1;
+      margin-top: 15px;
+      padding: 25px 40px 25px 40px;
+      border: 3px solid @routeColor1;
+      border-width: 2px 2px 8px 2px;
+      text-decoration: none;
+      vertical-align: text-bottom;
+      font-weight: 600;
+
+      &:hover {
+        color: @routeColor1;
+        border-bottom-width: 6px;
+        margin-top: 17px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+//-----IMPORTS-----
+@import "/assets/styles/imports/common.less";
+
+html[data-template='mobielegidsen-page-fullscreen'] {
+
+  html,
+  body,
+  .container,
+  .container-fluid {
+    width: 100%;
+    height: 100%;
+  }
+
+  //revert back to fluid
+  .container {
+    // Utilizes the mixin meant for fixed width containers, but without any defined
+    // width for fluid, full width layouts.
+    .container-fixed();
+    //make sure we have full width
+    width: auto;
+  }
+}

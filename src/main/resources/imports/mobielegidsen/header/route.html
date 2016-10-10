@@ -1,0 +1,33 @@
+<meta property="blocks:title" content="Header for route" lang="en">
+<meta property="blocks:title" content="Titelblok voor routes" lang="nl">
+<meta property="blocks:description" content="" lang="en">
+<meta property="blocks:description" content="" lang="nl">
+<meta property="blocks:icon" content="fa-minus">
+
+<meta property="blocks:controller" content="com.beligum.thomasmore.mobielegidsen.controllers.RouteHeaderController">
+
+
+## widget needs the scripts of blocks-image (TODO refactor this in one file?)
+<script src="/assets/scripts/imports/blocks-image.js" type="application/javascript" data-scope-role="admin"></script>
+
+## widget needs the scripts of blocks-text (TODO refactor this in one file?)
+<script src="/assets/webjars/medium-editor/5.14.4/dist/js/medium-editor.js" type="application/javascript" data-scope-role="admin"></script>
+<script src="/assets/scripts/imports/blocks-text/medium/medium-styles-extension.js" type="application/javascript" data-scope-role="admin"></script>
+<script src="/assets/scripts/imports/blocks-text/medium/mediumModule.js" type="application/javascript" data-scope-role="admin"></script>
+
+<script src="/assets/scripts/imports/blocks-text.js" type="application/javascript" data-scope-role="admin"></script>
+<script src="/assets/scripts/imports/text.js" type="application/javascript" data-scope-role="admin"></script>
+<script src="/assets/scripts/imports/blocks-text/styles.js" type="application/javascript" data-scope-role="admin"></script>
+
+
+<link href="/assets/styles/imports/mobielegidsen/header/route.less" rel="stylesheet">
+<script src="/assets/scripts/imports/mobielegidsen/header/route.js" data-scope-role="admin"></script>
+
+<template>
+    <div class="row">
+        <div class="col-xs-2 back">
+            <a href="$!CONTROLLER.getPreviousPage().key" title="$!CONTROLLER.getPreviousPage().value"><i class="fa fa-chevron-left prev-btn"></i></a>
+        </div>
+        <div class="col-xs-8 name" data-property="name" $CONSTANTS.blocks.core.TEXT_EDITOR_OPTIONS_ATTR="$CONSTANTS.blocks.core.TEXT_EDITOR_OPTIONS_NO_TOOLBAR">$MESSAGES.mobielegidsen.core.headerRouteDefaultName</div>
+    </div>
+</template>

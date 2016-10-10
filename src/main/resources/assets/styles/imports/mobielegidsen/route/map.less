@@ -1,0 +1,270 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+@import "/assets/webjars/bootstrap/3.3.4/less/close.less";
+@import (reference) "/assets/webjars/bootstrap/3.3.4/less/mixins/image.less";
+//@import '/assets/styles/imports/route-common.less';
+
+//-----VARIABLES----
+@headerHeight: 60px;
+
+//-----STYLES----
+//.header-wrapper {
+//  height: @headerHeight;
+//}
+
+//wrapper when the admin panel is open
+//.blocks-page-content {
+//  height: 100%;
+//}
+
+//blocks-layout {
+//  height: 100%;
+//  overflow: hidden;
+//
+//  .container {
+//    height: 100%;
+//
+//    .row {
+//      height: 100%;
+//
+//      .col-md-12 {
+//        height: 100%;
+//
+//        mobielegidsen-route-map {
+//          height: 100%;
+//        }
+//      }
+//    }
+//  }
+//}
+
+mobielegidsen-route-map {
+
+  &.@{MAP_SELECT_MODE_CLASS} {
+    .map {
+      cursor: crosshair !important;
+    }
+  }
+
+  //we store the data in html, but hidden
+  .@{MAP_DATA_WRAPPER_CLASS} {
+    display: none;
+  }
+
+  .map-wrapper {
+
+    position: relative;
+    //real height is set in main.js
+    min-height: 200px;
+    overflow: hidden;
+
+    @mapZ: 10;
+    .map {
+      height: 100%;
+      z-index: @mapZ;
+
+      .leaflet-popup-content-wrapper {
+        .border-radius(0, 0, 0, 0);
+
+        padding: 15px 15px 10px 15px;
+
+        .leaflet-popup-content {
+          width: auto !important;
+
+          a {
+            color: @themeBgColor !important;
+            //font-family: open_sansbold, arial, sans-serif;
+            font-family: nunitobold, arial, sans-serif;
+            padding-left: 35px;
+            margin-left: -15px;
+
+            //for fontawesone
+            position: relative;
+            display: inline-block;
+
+            //this play icon
+            &:before {
+              position: absolute;
+              display: inline-block;
+              left: 0px;
+              top: -12px;
+              font-family: FontAwesome;
+              font-size: 30px;
+              content: "\F144"; //icon-play-sign
+            }
+          }
+        }
+      }
+      .leaflet-popup-close-button {
+        .close();
+        .opacity(0.4);
+
+        &:hover,
+        &:focus {
+          .opacity(0.7);
+        }
+
+        //color: @themeDarkerBgColor !important;
+        font-size: 20px !important;
+        top: 3px !important;
+        right: 8px !important;
+      }
+    }
+
+    .drawer {
+      @activeHeaderBgColor: #ffffff;
+      @activeBodyBgColor: #ffffff;
+      @spacingLeft: 10px;
+      @spacingTop: 10px;
+      @spacingRight: 10px;
+
+      //basic idea, we position the the drawer outside the screen with a translation,
+      // and translate it up using transforms
+      position: absolute;
+      height: 100%;
+
+      left: @spacingLeft;
+      top: @spacingTop;
+      right: @spacingRight;
+      width: auto;
+
+      //made active after initialization
+      display: none;
+
+      z-index: @mapZ+1;
+      background-color: @activeBodyBgColor;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+      //&:before,
+      //&:after {
+      //  content: '\A';
+      //  position: absolute;
+      //  top: 0;
+      //  left: 0;
+      //  right: 0;
+      //  bottom: 0;
+      //  //opacity: 0;
+      //  //transition: all 1s;
+      //  //-webkit-transition: all 1s;
+      //}
+      //&:after {
+      //  //background: rgba(0, 0, 0, 0.6);
+      //  z-index: -1;
+      //}
+      //&:before {
+      //  background: rgba(255, 255, 255, 1.0);
+      //  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      //  z-index: 0;
+      //
+      //  top: @spacingTop;
+      //  left: @spacingLeft;
+      //  right: @spacingRight;
+      //}
+
+      .transition(0.10s, ease-out);
+
+      &.folded,
+      &.expanded {
+        .transition(0.15s, ease-in-out);
+      }
+      &.folded {
+        .header {
+          .close {
+            visibility: hidden;
+          }
+        }
+      }
+      &.expanded {
+
+        //&:after {
+        //  background: rgba(0, 0, 0, 0.6);
+        //}
+
+        .header {
+          //box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.6);
+          background-color: @activeHeaderBgColor;
+
+          .close {
+            .close();
+            visibility: visible;
+          }
+        }
+        .body {
+          padding: 0 0 20px 0;
+          //margin: 0 20px 0 20px;
+
+          mobielegidsen-header-route {
+            display: none;
+          }
+        }
+      }
+      &.panning {
+        //disable animations while dragging around
+        .transition(0s, linear);
+
+        .header {
+          box-shadow: none;
+        }
+      }
+
+      @minHeight: 90px;
+      .header {
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 20px;
+
+        //this makes the body scroll 'under' the header
+        position: relative;
+        z-index: @mapZ+2;
+
+        a {
+          height: @minHeight;
+          line-height: @minHeight;
+
+          //for fontawesone
+          position: relative;
+
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding-left: 40px;
+
+          text-align: left;
+          font-size: 20px;
+          color: @themeBgColor !important;
+          //font-family: open_sansbold, arial, sans-serif;
+          font-family: nunitobold, arial, sans-serif;
+
+          &,
+          &:active,
+          &:visited {
+            text-decoration: none;
+          }
+
+          //this play icon
+          &:before {
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            font-family: FontAwesome;
+            font-size: 30px;
+            content: "\F144"; //icon-play-sign
+          }
+        }
+      }
+      .body {
+        overflow: auto;
+        //exact height is set in JS
+        height: 0px;
+        padding: 20px 10px;
+
+        img {
+          .img-responsive();
+        }
+      }
+    }
+  }
+}

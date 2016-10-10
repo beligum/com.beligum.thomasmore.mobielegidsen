@@ -1,0 +1,128 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+@import '/assets/styles/imports/route-common.less';
+
+//-----VARIABLES----
+
+//-----STYLES----
+.header-wrapper {
+}
+
+.photo-wrapper {
+
+  .slider {
+    .video {
+      .controls {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        button,
+        .loader {
+          @buttonHeight: 54px;
+
+          position: relative;
+          top: 50%;
+          margin-top: -(@buttonHeight/2);
+          padding: 0;
+          background-color: transparent;
+
+          //invisible, but full scene
+          &.pause {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            margin-top: 0;
+          }
+
+          .fa {
+            font-size: @buttonHeight;
+            color: @buttonTextColor;
+          }
+          &.loader {
+            .fa {
+              .opacity(0.75);
+              font-size: @buttonHeight / 1.5;
+            }
+          }
+        }
+        //
+        //.loader {
+        //  @buttonHeight: 54px;
+        //
+        //  position: relative;
+        //  top: 50%;
+        //  margin-top: -(@buttonHeight/2);
+        //
+        //  .fa {
+        //    font-size: @buttonHeight;
+        //    color: @buttonTextColor;
+        //  }
+        //}
+        .progress-bar {
+          position: absolute;
+          bottom: 0;
+          padding: 0;
+          margin: 0;
+          height: 5px;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.1);
+
+          .progress {
+            height: 100%;
+            width: 0%;
+            background-color: @themeBgColor;
+          }
+        }
+      }
+    }
+    .application {
+      .iframe-dummy-wrapper {
+        img {
+
+        }
+        .vjs-big-play-button {
+          color: #FFFFFF !important;
+        }
+      }
+    }
+  }
+}
+
+.address-wrapper,
+.phone-wrapper {
+  font-family: nunitoblack, arial, sans-serif;
+  color: @buttonTextColor;
+  background-color: @themeLighter1BgColor;
+  padding: 15px;
+
+  .name {
+    padding-left: 0;
+  }
+}
+.phone-wrapper {
+  color: @themeBgColor;
+  background-color: @themeLighter4BgColor;
+}
+.info-wrapper {
+  padding: 20px 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.more-info-wrapper {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 20px 30px;
+
+  span {
+    font-family: open_sansbold, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #404040;
+    font-weight: 400;
+  }
+  div {
+    padding-top: 15px;
+    display: none;
+  }
+}

@@ -1,0 +1,88 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----STYLES-----
+blocks-spacer {
+  @import "/assets/styles/imports/blocks-spacer/variables.less";
+
+  .colors {
+    display: block;
+    visibility: hidden;
+    margin: 0;
+
+    position: relative;
+    height: @defaultHeight;
+
+    .wrapper {
+      display: block;
+      margin: 0;
+
+      @colorHeight: 4px;
+      //center vertically
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin-top: -(@colorHeight / 2);
+
+      i {
+        display: inline-block;
+        height: @colorHeight;
+        float: left;
+        width: 100% / 6;
+
+        @lighten: 20%;
+        &.seg1 {
+          background-color: lighten(@routeColor2, @lighten);
+        }
+        &.seg2 {
+          background-color: lighten(@routeColor1, @lighten);
+        }
+        &.seg3 {
+          background-color: lighten(@routeColor3, @lighten);
+        }
+        &.seg4 {
+          background-color: lighten(@routeColor2, @lighten);
+        }
+        &.seg5 {
+          background-color: lighten(@routeColor1, @lighten);
+        }
+        &.seg6 {
+          background-color: lighten(@routeColor3, @lighten);
+        }
+      }
+    }
+  }
+
+  &.@{SPACER_STYLE_COLORED_CLASS} {
+    .colors {
+      visibility: visible;
+    }
+  }
+
+  &.xs {
+    .colors {
+      height: @height_xs;
+    }
+  }
+  &.sm {
+    .colors {
+      height: @height_sm;
+    }
+  }
+  &.md {
+    .colors {
+      height: @height_md;
+    }
+  }
+  &.lg {
+    .colors {
+      height: @height_lg;
+    }
+  }
+  &.xl {
+    .colors {
+      height: @height_xl;
+    }
+  }
+}

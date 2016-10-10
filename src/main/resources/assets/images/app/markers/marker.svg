@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="marker.svg">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter4226"
+       x="-0.26950155"
+       width="1.5390031"
+       y="-0.21358148"
+       height="1.427163">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.4560099"
+         id="feGaussianBlur4228" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4341">
+      <path
+         style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 187.34376,-66.876646 C 162.36433,-27.740251 146.32709,126.35836 147.38433,161.54235 148.03437,183.17554 161.51924,209.13739 174.67692,231.65445 187.8346,254.17151 201.00051,272.31837 202.17139,273.9214 216.87352,294.52722 309.11854,203.15653 312.20713,198.5395 312.20713,198.5395 388.14118,10.816042 385.71453,-66.876646 z"
+         id="path4343"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csscccc" />
+    </clipPath>
+    <filter
+       inkscape:collect="always"
+       id="filter3822"
+       x="-0.28878868"
+       width="1.5775774"
+       y="-0.47782511"
+       height="1.9556502">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.8618838"
+         id="feGaussianBlur3824" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4240"
+       x="-0.21387048"
+       width="1.4277411"
+       y="-0.26382175"
+       height="1.5276434">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.6785"
+         id="feGaussianBlur4242" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4226-3"
+       x="-0.26950154"
+       width="1.5390031"
+       y="-0.21358147"
+       height="1.427163">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.4560099"
+         id="feGaussianBlur4228-6" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="208.41051"
+     inkscape:cy="991.43517"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-3"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     showborder="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="color:#000000;fill:#ffff00;stroke:#ffff00;stroke-width:1.98899996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M -83.274575,141.74799 C -87.436335,142.9212 -90.722365,145.658 -90.722365,148.67475 -90.722365,152.77843 -85.399475,156.12254 -78.830415,156.12254 -72.261345,156.12254 -66.938465,152.77843 -66.938465,148.67475 -66.938465,145.66484 -70.236175,142.92778 -74.386255,141.74799 L -78.830415,147.81656 z"
+       id="path3835"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssccc"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       d="M -78.830415,95.138387 C -88.660265,95.138387 -96.674165,103.12105 -96.674165,112.95089 -96.674165,120.5923 -88.958975,133.03009 -83.892915,140.35714 L -82.674165,142.10714 C -80.993535,144.47695 -78.830415,147.26339 -78.830415,147.26339 -78.830415,147.26339 -76.667275,144.47695 -74.986665,142.10714 L -73.799165,140.35714 C -68.745215,133.03009 -61.017913,120.5802 -61.017913,112.95089 -61.017913,103.12105 -69.000585,95.138387 -78.830415,95.138387 z M -78.830415,102.01339 C -72.894785,102.01339 -68.080415,106.85901 -68.080415,112.79464 -68.080415,118.73027 -72.894785,123.54464 -78.830415,123.54464 -84.766045,123.54464 -89.611665,118.73027 -89.611665,112.79464 -89.611665,106.85901 -84.766045,102.01339 -78.830415,102.01339 z"
+       id="path3828"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:transform-center-x="-13.445948"
+       inkscape:transform-center-y="-8.9992416"
+       sodipodi:nodetypes="ccsssc"
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.75137854;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4226)"
+       id="path4209"
+       d="M 209.53831,274.11496 C 208.53107,274.91906 207.18612,274.91906 206.79682,274.11496 206.02934,272.53527 188.10665,235.21957 195.56186,215.81655 203.21429,195.90027 225.14232,179.69845 244.44518,179.69845 263.74804,179.69845 273.22562,195.90027 265.57319,215.81655 258.11798,235.21957 211.51786,272.53527 209.53831,274.11496 z"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.36431194,0,-0.08301513,0.18527843,-177.22582,94.886571)" />
+    <g
+       id="g3989"
+       transform="matrix(0.3581495,0,0,0.3581495,-179.44991,18.570491)">
+      <path
+         sodipodi:nodetypes="ccsssc"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="path8"
+         d="M 157.06233,355.04683 C 156.01176,356.21937 153.98824,356.21937 152.93767,355.04683 150.86979,352.74334 102.33292,298.32994 102.33292,270.03663 102.33292,240.9949 125.95827,217.36956 155,217.36956 184.04173,217.36956 207.66707,240.9949 207.66707,270.03663 207.66707,298.32994 159.12744,352.74334 157.06233,355.04683 z"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 152.625,225.84375 C 152.49692,225.84726 152.3779,225.90145 152.25,225.90625 130.21901,226.73346 110.9144,246.59595 110.78125,268.6875 A 5.7302053,5.7302053 0 0 0 110.78125,268.96875 C 111.50327,284.77644 121.72976,299.05052 131.46875,314.21875 131.61475,314.44613 131.65707,314.5049 131.59375,314.40625 A 5.7302053,5.7302053 0 0 0 131.75,314.65625 C 137.86107,323.11792 144.0789,331.52315 150.59375,339.34375 A 5.7302053,5.7302053 0 0 0 159.46875,339.25 C 161.88536,336.21318 164.35464,333.01937 167,329.8125 A 5.7302053,5.7302053 0 0 0 167.21875,329.5625 C 180.31292,311.82587 193.81982,294.30121 198.71875,274.40625 A 5.7302053,5.7302053 0 0 0 198.84375,273.8125 C 200.35772,262.70124 196.29262,251.61935 189.46875,242.9375 182.88478,234.56088 173.54164,228.28522 162.96875,226.5625 A 5.7302053,5.7302053 0 0 0 161.875,226.28125 5.7302053,5.7302053 0 0 0 161.84375,226.28125 5.7302053,5.7302053 0 0 0 161.8125,226.28125 C 158.61603,225.85906 155.6291,225.66596 152.8125,225.84375 A 5.7302053,5.7302053 0 0 0 152.625,225.875 L 152.625,225.84375 z"
+         id="path3987"
+         style="fill:#e81313;fill-opacity:1;stroke:none"
+         inkscape:original="M 152.78125 231.5625 C 134.18676 232.0724 116.61235 250.07771 116.5 268.71875 C 117.10755 282.02018 126.49561 295.88412 136.28125 311.125 C 136.32277 311.18966 136.36472 311.24779 136.40625 311.3125 C 142.49242 319.7397 148.63195 328.04312 155 335.6875 C 157.37406 332.70415 159.86883 329.45957 162.59375 326.15625 C 175.71321 308.38536 188.67031 291.24904 193.15625 273.03125 C 195.66391 254.62711 179.51448 234.35071 161.09375 231.96875 A 12.144072 12.144072 0 0 1 161.0625 231.96875 C 158.10586 231.57824 155.45875 231.41913 153.1875 231.5625 A 12.144072 12.144072 0 0 1 152.78125 231.5625 z "
+         inkscape:radius="5.7296324"
+         sodipodi:type="inkscape:offset" />
+    </g>
+    <path
+       sodipodi:nodetypes="csssc"
+       inkscape:connector-curvature="0"
+       id="path3785"
+       d="M -82.915245,141.49107 C -87.366075,142.61307 -90.955415,145.48733 -90.955415,148.66964 -90.955415,152.85375 -85.528215,156.26339 -78.830415,156.26339 -72.132605,156.26339 -66.705415,152.85375 -66.705415,148.66964 -66.705415,145.48003 -70.309755,142.57702 -74.776835,141.45982"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:2.02800012;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       d="M -67.974175,112.78881 C -67.974175,106.79548 -72.846015,101.92364 -78.839345,101.92364 -84.832675,101.92364 -89.704515,106.79548 -89.704515,112.78881 -89.704515,118.78214 -84.832675,123.65398 -78.839345,123.65398 -72.846015,123.65398 -67.974175,118.78214 -67.974175,112.78881 z"
+       id="path3841"
+       style="fill:#ffffff;stroke:none"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cssscccccsscss"
+       inkscape:connector-curvature="0"
+       d="M -73.693845,140.76201 C -68.536025,133.28439 -60.638863,120.57491 -60.638863,112.78881 -60.638863,102.75696 -68.807495,94.588337 -78.839335,94.588337 -88.871195,94.588337 -97.039825,102.75696 -97.039825,112.78881 -97.039825,120.58725 -89.155005,133.28439 -83.984825,140.76201 L -82.738565,142.52653 C -81.023395,144.94504 -78.826995,147.79541 -78.826995,147.79541 -78.826995,147.79541 -76.630605,144.94504 -74.915455,142.52653 z M -78.839335,96.611977 C -69.918025,96.611977 -62.662523,103.86749 -62.662523,112.78881 -62.662523,122.09264 -75.470705,139.94762 -78.839335,144.47614 -82.207965,139.94762 -95.016165,122.09264 -95.016165,112.78881 -95.016165,103.86749 -87.760665,96.611977 -78.839335,96.611977 z"
+       id="path3781"
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000"
+       id="path3830"
+       d="M -67.721635,112.78881 C -67.721635,106.65618 -72.706715,101.6711 -78.839345,101.6711 -84.971975,101.6711 -89.957055,106.65618 -89.957055,112.78881 -89.957055,118.92144 -84.971975,123.90652 -78.839345,123.90652 -72.706715,123.90652 -67.721635,118.92144 -67.721635,112.78881 z M -87.933415,112.78881 C -87.933415,107.76671 -83.849105,103.69474 -78.839345,103.69474 -73.817245,103.69474 -69.745275,107.77905 -69.745275,112.78881 -69.745275,117.81091 -73.829585,121.89522 -78.839345,121.89522 -83.861445,121.88288 -87.933415,117.79857 -87.933415,112.78881 z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0.3581495,0,0,0.3581495,-179.44991,88.271017)"
+       id="g3862">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 157.06233,355.04683 C 156.01176,356.21937 153.98824,356.21937 152.93767,355.04683 150.86979,352.74334 102.33292,298.32994 102.33292,270.03663 102.33292,240.9949 125.95827,217.36956 155,217.36956 184.04173,217.36956 207.66707,240.9949 207.66707,270.03663 207.66707,298.32994 159.12744,352.74334 157.06233,355.04683 z"
+         id="path3864"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:nodetypes="ccsssc" />
+      <path
+         sodipodi:type="inkscape:offset"
+         inkscape:radius="5.7296324"
+         inkscape:original="M 152.78125 231.5625 C 134.18676 232.0724 116.61235 250.07771 116.5 268.71875 C 117.10755 282.02018 126.49561 295.88412 136.28125 311.125 C 136.32277 311.18966 136.36472 311.24779 136.40625 311.3125 C 142.49242 319.7397 148.63195 328.04312 155 335.6875 C 157.37406 332.70415 159.86883 329.45957 162.59375 326.15625 C 175.71321 308.38536 188.67031 291.24904 193.15625 273.03125 C 195.66391 254.62711 179.51448 234.35071 161.09375 231.96875 A 12.144072 12.144072 0 0 1 161.0625 231.96875 C 158.10586 231.57824 155.45875 231.41913 153.1875 231.5625 A 12.144072 12.144072 0 0 1 152.78125 231.5625 z "
+         style="fill:#e81313;fill-opacity:1;stroke:none"
+         id="path3866"
+         d="M 152.625,225.84375 C 152.49692,225.84726 152.3779,225.90145 152.25,225.90625 130.21901,226.73346 110.9144,246.59595 110.78125,268.6875 A 5.7302053,5.7302053 0 0 0 110.78125,268.96875 C 111.50327,284.77644 121.72976,299.05052 131.46875,314.21875 131.61475,314.44613 131.65707,314.5049 131.59375,314.40625 A 5.7302053,5.7302053 0 0 0 131.75,314.65625 C 137.86107,323.11792 144.0789,331.52315 150.59375,339.34375 A 5.7302053,5.7302053 0 0 0 159.46875,339.25 C 161.88536,336.21318 164.35464,333.01937 167,329.8125 A 5.7302053,5.7302053 0 0 0 167.21875,329.5625 C 180.31292,311.82587 193.81982,294.30121 198.71875,274.40625 A 5.7302053,5.7302053 0 0 0 198.84375,273.8125 C 200.35772,262.70124 196.29262,251.61935 189.46875,242.9375 182.88478,234.56088 173.54164,228.28522 162.96875,226.5625 A 5.7302053,5.7302053 0 0 0 161.875,226.28125 5.7302053,5.7302053 0 0 0 161.84375,226.28125 5.7302053,5.7302053 0 0 0 161.8125,226.28125 C 158.61603,225.85906 155.6291,225.66596 152.8125,225.84375 A 5.7302053,5.7302053 0 0 0 152.625,225.875 L 152.625,225.84375 z" />
+    </g>
+    <path
+       transform="matrix(0.36431194,0,-0.08301513,0.18527843,-177.22582,203.98305)"
+       inkscape:connector-curvature="0"
+       d="M 209.53831,274.11496 C 208.53107,274.91906 207.18612,274.91906 206.79682,274.11496 206.02934,272.53527 188.10665,235.21957 195.56186,215.81655 203.21429,195.90027 225.14232,179.69845 244.44518,179.69845 263.74804,179.69845 273.22562,195.90027 265.57319,215.81655 258.11798,235.21957 211.51786,272.53527 209.53831,274.11496 z"
+       id="path3868"
+       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.75137854;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4226)"
+       sodipodi:nodetypes="ccsssc"
+       inkscape:transform-center-y="-8.9992416"
+       inkscape:transform-center-x="-13.445948" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       sodipodi:nodetypes="csssccc"
+       inkscape:connector-curvature="0"
+       id="path3872"
+       d="M -3.9776026,141.74799 C -8.1393626,142.9212 -11.425393,145.658 -11.425393,148.67475 -11.425393,152.77843 -6.1025026,156.12254 0.46655743,156.12254 7.0356274,156.12254 12.358507,152.77843 12.358507,148.67475 12.358507,145.66484 9.0607974,142.92778 4.9107174,141.74799 L 0.46655743,147.81656 z"
+       style="color:#000000;fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:1.98899996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       id="path3870"
+       d="M 0.46655743,95.138387 C -9.3632926,95.138387 -17.377193,103.12105 -17.377193,112.95089 -17.377193,120.5923 -9.6620026,133.03009 -4.5959426,140.35714 L -3.3771926,142.10714 C -1.6965626,144.47695 0.46655743,147.26339 0.46655743,147.26339 0.46655743,147.26339 2.6296974,144.47695 4.3103074,142.10714 L 5.4978074,140.35714 C 10.551757,133.03009 18.279067,120.5802 18.279067,112.95089 18.279067,103.12105 10.296387,95.138387 0.46655743,95.138387 z M 0.46655743,102.01339 C 6.4021874,102.01339 11.216557,106.85901 11.216557,112.79464 11.216557,118.73027 6.4021874,123.54464 0.46655743,123.54464 -5.4690726,123.54464 -10.314693,118.73027 -10.314693,112.79464 -10.314693,106.85901 -5.4690726,102.01339 0.46655743,102.01339 z"
+       style="fill:#ff0000;fill-opacity:1;stroke:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       sodipodi:nodetypes="sssss"
+       style="fill:#ffffff;stroke:none"
+       id="path3876"
+       d="M 11.322797,112.78881 C 11.322797,106.79548 6.4509574,101.92364 0.45762743,101.92364 -5.5357026,101.92364 -10.407543,106.79548 -10.407543,112.78881 -10.407543,118.78214 -5.5357026,123.65398 0.45762743,123.65398 6.4509574,123.65398 11.322797,118.78214 11.322797,112.78881 z"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+       inkscape:connector-curvature="0"
+       d="M 11.575337,112.78881 C 11.575337,106.65618 6.5902574,101.6711 0.45762743,101.6711 -5.6750026,101.6711 -10.660083,106.65618 -10.660083,112.78881 -10.660083,118.92144 -5.6750026,123.90652 0.45762743,123.90652 6.5902574,123.90652 11.575337,118.92144 11.575337,112.78881 z M -8.6364426,112.78881 C -8.6364426,107.76671 -4.5521326,103.69474 0.45762743,103.69474 5.4797274,103.69474 9.5516974,107.77905 9.5516974,112.78881 9.5516974,117.81091 5.4673874,121.89522 0.45762743,121.89522 -4.5644726,121.88288 -8.6364426,117.79857 -8.6364426,112.78881 z"
+       id="path3880"
+       style="fill:#000000" />
+    <path
+       inkscape:connector-curvature="0"
+       d="M -277.18702,96.703504 C -291.94606,96.703504 -303.95351,108.71095 -303.95351,123.46999 -303.95351,138.22851 -291.94606,150.23649 -277.18702,150.23649 -262.42798,150.23649 -250.42053,138.22851 -250.42053,123.46999 -250.42053,108.71095 -262.42798,96.703504 -277.18702,96.703504 z M -275.02857,145.81306 V 138.58022 H -279.34547 V 145.8136 C -290.00442,144.79165 -298.50867,136.2874 -299.53008,125.62845 H -292.2967 V 121.31154 H -299.53008 C -298.50814,110.65259 -290.00442,102.14888 -279.34547,101.12693 V 108.35977 H -275.02857 V 101.12693 C -264.36962,102.14834 -255.86537,110.65206 -254.84396,121.31154 H -262.0768 V 125.62845 H -254.84342 C -255.86537,136.2874 -264.36962,144.79165 -275.02857,145.81306 z"
+       id="path3014"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/crosshair/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3858"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/crosshair/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-136.37059,0)">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         sodipodi:nodetypes="cssssc"
+         inkscape:connector-curvature="0"
+         id="path3836"
+         d="M 211.49016,136.81242 C 205.24934,138.57171 200.32175,142.6757 200.32175,147.1995 200.32175,153.35321 208.30373,158.36789 218.15443,158.36789 228.00514,158.36789 235.98711,153.35321 235.98711,147.1995 235.98711,142.68596 231.01086,138.68765 224.8187,136.81242 219.96705,135.34314 214.50888,135.87804 211.49016,136.81242 z"
+         style="opacity:0.3;color:#000000;fill:#0c56d0;fill-opacity:1;stroke:#0c56d0;stroke-width:2.9826231;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="opacity:0.9;color:#000000;fill:#4285f4;fill-opacity:1;stroke:#4285f4;stroke-width:1.85257411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 214.0151,140.72304 C 210.13879,141.81578 207.07815,144.36486 207.07815,147.17469 207.07815,150.9969 212.03594,154.11163 218.15443,154.11163 224.27293,154.11163 229.23071,150.9969 229.23071,147.17469 229.23071,144.37123 226.13985,141.88779 222.29376,140.72304 219.28029,139.81044 215.8901,140.14268 214.0151,140.72304 z"
+         id="path3042"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssssc"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         transform="matrix(1,0,0,0.68744254,0,44.345233)"
+         d="M 218.125,137.59375 C 211.04012,137.59375 205.28125,143.02773 205.28125,149.71875 205.28125,156.40954 211.04012,161.875 218.125,161.875 225.20988,161.875 230.96875,156.40954 230.96875,149.71875 230.96875,143.02773 225.20988,137.59375 218.125,137.59375 z M 217.09375,139.59375 217.09375,142.875 219.15625,142.875 219.15625,139.59375 C 224.27294,140.05681 228.35344,143.91752 228.84375,148.75 L 225.375,148.75 225.375,150.71875 228.84375,150.71875 C 228.35318,155.551 224.27294,159.41194 219.15625,159.875 L 219.15625,156.59375 217.09375,156.59375 217.09375,159.875 C 211.97706,159.4117 207.89656,155.551 207.40625,150.71875 L 210.875,150.71875 210.875,148.75 207.40625,148.75 C 207.89682,143.91775 211.97706,140.05705 217.09375,139.59375 z"
+         id="path3822"
+         style="fill:#ffffff;fill-opacity:1"
+         inkscape:original="M 218.125 137.59375 C 211.04012 137.59375 205.28125 143.02773 205.28125 149.71875 C 205.28125 156.40954 211.04012 161.875 218.125 161.875 C 225.20988 161.875 230.96875 156.40954 230.96875 149.71875 C 230.96875 143.02773 225.20988 137.59375 218.125 137.59375 z M 217.09375 139.59375 L 217.09375 142.875 L 219.15625 142.875 L 219.15625 139.59375 C 224.27294 140.05681 228.35344 143.91752 228.84375 148.75 L 225.375 148.75 L 225.375 150.71875 L 228.84375 150.71875 C 228.35318 155.551 224.27294 159.41194 219.15625 159.875 L 219.15625 156.59375 L 217.09375 156.59375 L 217.09375 159.875 C 211.97706 159.4117 207.89656 155.551 207.40625 150.71875 L 210.875 150.71875 L 210.875 148.75 L 207.40625 148.75 C 207.89682 143.91775 211.97706 140.05705 217.09375 139.59375 z "
+         inkscape:radius="0"
+         sodipodi:type="inkscape:offset" />
+    </g>
+    <g
+       id="g3903"
+       transform="translate(-182.82199,0.714304)">
+      <path
+         inkscape:connector-curvature="0"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         id="path3897"
+         d="M 264.62145,95.138387 C 254.7916,95.138387 246.7777,103.12105 246.7777,112.95089 246.7777,120.5923 254.49289,133.03009 259.55895,140.35714 L 260.7777,142.10714 C 262.45833,144.47695 264.62145,147.26339 264.62145,147.26339 264.62145,147.26339 266.78459,144.47695 268.4652,142.10714 L 269.6527,140.35714 C 274.70665,133.03009 282.43396,120.5802 282.43396,112.95089 282.43396,103.12105 274.45128,95.138387 264.62145,95.138387 z M 264.62145,102.01339 C 270.55708,102.01339 275.37145,106.85901 275.37145,112.79464 275.37145,118.73027 270.55708,123.54464 264.62145,123.54464 258.68582,123.54464 253.8402,118.73027 253.8402,112.79464 253.8402,106.85901 258.68582,102.01339 264.62145,102.01339 z"
+         style="fill:#3370d7;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         sodipodi:nodetypes="sssss"
+         style="fill:#3370d7;fill-opacity:1;stroke:none"
+         id="path3899"
+         d="M 275.47769,112.78881 C 275.47769,106.79548 270.60585,101.92364 264.61252,101.92364 258.61919,101.92364 253.74735,106.79548 253.74735,112.78881 253.74735,118.78214 258.61919,123.65398 264.61252,123.65398 270.60585,123.65398 275.47769,118.78214 275.47769,112.78881 z"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         inkscape:connector-curvature="0"
+         d="M 275.73023,112.78881 C 275.73023,106.65618 270.74515,101.6711 264.61252,101.6711 258.47989,101.6711 253.49481,106.65618 253.49481,112.78881 253.49481,118.92144 258.47989,123.90652 264.61252,123.90652 270.74515,123.90652 275.73023,118.92144 275.73023,112.78881 z M 255.51845,112.78881 C 255.51845,107.76671 259.60276,103.69474 264.61252,103.69474 269.63462,103.69474 273.70659,107.77905 273.70659,112.78881 273.70659,117.81091 269.62228,121.89522 264.61252,121.89522 259.59042,121.88288 255.51845,117.79857 255.51845,112.78881 z"
+         id="path3901"
+         style="fill:#3370d7;fill-opacity:1" />
+    </g>
+    <g
+       inkscape:export-ydpi="180.3622"
+       inkscape:export-xdpi="180.3622"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/crosshair/marker-icon2x.png"
+       id="g3908"
+       transform="translate(-67.799165,0)">
+      <path
+         style="opacity:0.3;color:#000000;fill:#0c56d0;fill-opacity:1;stroke:#0c56d0;stroke-width:2.9826231;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 211.49016,136.81242 C 205.24934,138.57171 200.32175,142.6757 200.32175,147.1995 200.32175,153.35321 208.30373,158.36789 218.15443,158.36789 228.00514,158.36789 235.98711,153.35321 235.98711,147.1995 235.98711,142.68596 231.01086,138.68765 224.8187,136.81242 219.96705,135.34314 214.50888,135.87804 211.49016,136.81242 z"
+         id="path3910"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssssc"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         sodipodi:nodetypes="cssssc"
+         inkscape:connector-curvature="0"
+         id="path3912"
+         d="M 214.0151,140.72304 C 210.13879,141.81578 207.07815,144.36486 207.07815,147.17469 207.07815,150.9969 212.03594,154.11163 218.15443,154.11163 224.27293,154.11163 229.23071,150.9969 229.23071,147.17469 229.23071,144.37123 226.13985,141.88779 222.29376,140.72304 219.28029,139.81044 215.8901,140.14268 214.0151,140.72304 z"
+         style="opacity:0.9;color:#000000;fill:#4285f4;fill-opacity:1;stroke:#4285f4;stroke-width:1.85257411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         sodipodi:type="inkscape:offset"
+         inkscape:radius="0"
+         inkscape:original="M 218.125 137.59375 C 211.04012 137.59375 205.28125 143.02773 205.28125 149.71875 C 205.28125 156.40954 211.04012 161.875 218.125 161.875 C 225.20988 161.875 230.96875 156.40954 230.96875 149.71875 C 230.96875 143.02773 225.20988 137.59375 218.125 137.59375 z M 217.09375 139.59375 L 217.09375 142.875 L 219.15625 142.875 L 219.15625 139.59375 C 224.27294 140.05681 228.35344 143.91752 228.84375 148.75 L 225.375 148.75 L 225.375 150.71875 L 228.84375 150.71875 C 228.35318 155.551 224.27294 159.41194 219.15625 159.875 L 219.15625 156.59375 L 217.09375 156.59375 L 217.09375 159.875 C 211.97706 159.4117 207.89656 155.551 207.40625 150.71875 L 210.875 150.71875 L 210.875 148.75 L 207.40625 148.75 C 207.89682 143.91775 211.97706 140.05705 217.09375 139.59375 z "
+         style="fill:#ffffff;fill-opacity:1"
+         id="path3914"
+         d="M 218.125,137.59375 C 211.04012,137.59375 205.28125,143.02773 205.28125,149.71875 205.28125,156.40954 211.04012,161.875 218.125,161.875 225.20988,161.875 230.96875,156.40954 230.96875,149.71875 230.96875,143.02773 225.20988,137.59375 218.125,137.59375 z M 217.09375,139.59375 217.09375,142.875 219.15625,142.875 219.15625,139.59375 C 224.27294,140.05681 228.35344,143.91752 228.84375,148.75 L 225.375,148.75 225.375,150.71875 228.84375,150.71875 C 228.35318,155.551 224.27294,159.41194 219.15625,159.875 L 219.15625,156.59375 217.09375,156.59375 217.09375,159.875 C 211.97706,159.4117 207.89656,155.551 207.40625,150.71875 L 210.875,150.71875 210.875,148.75 207.40625,148.75 C 207.89682,143.91775 211.97706,140.05705 217.09375,139.59375 z"
+         transform="matrix(1,0,0,0.68744254,0,44.345233)" />
+    </g>
+    <g
+       id="g3811"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon-2x.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180">
+      <rect
+         y="94.919128"
+         x="336.12286"
+         height="70"
+         width="50"
+         id="rect3039"
+         style="opacity:0;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <g
+         inkscape:export-ydpi="89.813942"
+         inkscape:export-xdpi="89.813942"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+         id="g3826"
+         transform="translate(0.01562377,0)">
+        <path
+           style="opacity:0.3;color:#000000;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.98899996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3822);enable-background:accumulate"
+           d="M 356.66308,141.74799 C 352.50132,142.9212 349.21529,145.658 349.21529,148.67475 349.21529,152.77843 354.53818,156.12254 361.10724,156.12254 367.67631,156.12254 372.99919,152.77843 372.99919,148.67475 372.99919,145.66484 369.70148,142.92778 365.5514,141.74799 L 361.10724,147.81656 z"
+           id="path3025"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csssccc"
+           inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <g
+           id="g3801"
+           transform="translate(0,0.714304)">
+          <path
+             inkscape:connector-curvature="0"
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             id="path3027"
+             d="M 361.12286,95.138387 C 351.29301,95.138387 343.27911,103.12105 343.27911,112.95089 343.27911,120.5923 350.9943,133.03009 356.06036,140.35714 L 357.27911,142.10714 C 358.95974,144.47695 361.12286,147.26339 361.12286,147.26339 361.12286,147.26339 363.286,144.47695 364.96661,142.10714 L 366.15411,140.35714 C 371.20806,133.03009 378.93537,120.5802 378.93537,112.95089 378.93537,103.12105 370.95269,95.138387 361.12286,95.138387 z M 361.12286,102.01339 C 367.05849,102.01339 371.87286,106.85901 371.87286,112.79464 371.87286,118.73027 367.05849,123.54464 361.12286,123.54464 355.18723,123.54464 350.34161,118.73027 350.34161,112.79464 350.34161,106.85901 355.18723,102.01339 361.12286,102.01339 z"
+             style="fill:#f75448;fill-opacity:1;stroke:none" />
+          <path
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             sodipodi:nodetypes="sssss"
+             style="fill:#5c1410;fill-opacity:1;stroke:none"
+             id="path3029"
+             d="M 371.9791,112.78881 C 371.9791,106.79548 367.10726,101.92364 361.11393,101.92364 355.1206,101.92364 350.24876,106.79548 350.24876,112.78881 350.24876,118.78214 355.1206,123.65398 361.11393,123.65398 367.10726,123.65398 371.9791,118.78214 371.9791,112.78881 z"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:export-ydpi="90"
+             inkscape:export-xdpi="90"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             inkscape:connector-curvature="0"
+             d="M 372.23164,112.78881 C 372.23164,106.65618 367.24656,101.6711 361.11393,101.6711 354.9813,101.6711 349.99622,106.65618 349.99622,112.78881 349.99622,118.92144 354.9813,123.90652 361.11393,123.90652 367.24656,123.90652 372.23164,118.92144 372.23164,112.78881 z M 352.01986,112.78881 C 352.01986,107.76671 356.10417,103.69474 361.11393,103.69474 366.13603,103.69474 370.208,107.77905 370.208,112.78881 370.208,117.81091 366.12369,121.89522 361.11393,121.89522 356.09183,121.88288 352.01986,117.79857 352.01986,112.78881 z"
+             id="path3031"
+             style="fill:#5c1410;fill-opacity:1" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g3820"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon-2x_selected.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180">
+      <use
+         height="1052.3622"
+         width="744.09448"
+         transform="translate(61.071429,0)"
+         id="use3809"
+         xlink:href="#rect3039"
+         y="0"
+         x="0" />
+      <g
+         inkscape:export-ydpi="179.38292"
+         inkscape:export-xdpi="179.38292"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon-2x_selected.png"
+         id="g3883"
+         transform="translate(0.47789977,0)">
+        <path
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+           sodipodi:nodetypes="cssssc"
+           inkscape:connector-curvature="0"
+           id="path3912-3"
+           d="M 417.28454,141.73685 C 413.13428,142.90675 409.85733,145.63578 409.85733,148.64399 409.85733,152.73602 415.16551,156.07066 421.71639,156.07066 428.2673,156.07066 433.57546,152.73602 433.57546,148.64399 433.57546,145.6426 430.26618,142.98383 426.14826,141.73685 422.92182,140.75982 419.29204,141.11553 417.28454,141.73685 z"
+           style="opacity:0.9;color:#000000;fill:#4285f4;fill-opacity:1;stroke:#ffffff;stroke-width:1.98343134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <g
+           transform="translate(60.609153,0.714304)"
+           id="g3839">
+          <path
+             style="fill:#f75448;fill-opacity:1;stroke:none"
+             d="M 361.12286,95.138387 C 351.29301,95.138387 343.27911,103.12105 343.27911,112.95089 343.27911,120.5923 350.9943,133.03009 356.06036,140.35714 L 357.27911,142.10714 C 358.95974,144.47695 361.12286,147.26339 361.12286,147.26339 361.12286,147.26339 363.286,144.47695 364.96661,142.10714 L 366.15411,140.35714 C 371.20806,133.03009 378.93537,120.5802 378.93537,112.95089 378.93537,103.12105 370.95269,95.138387 361.12286,95.138387 z M 361.12286,102.01339 C 367.05849,102.01339 371.87286,106.85901 371.87286,112.79464 371.87286,118.73027 367.05849,123.54464 361.12286,123.54464 355.18723,123.54464 350.34161,118.73027 350.34161,112.79464 350.34161,106.85901 355.18723,102.01339 361.12286,102.01339 z"
+             id="path3842"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:connector-curvature="0"
+             d="M 371.9791,112.78881 C 371.9791,106.79548 367.10726,101.92364 361.11393,101.92364 355.1206,101.92364 350.24876,106.79548 350.24876,112.78881 350.24876,118.78214 355.1206,123.65398 361.11393,123.65398 367.10726,123.65398 371.9791,118.78214 371.9791,112.78881 z"
+             id="path3844"
+             style="fill:#5c1410;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="sssss"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" />
+          <path
+             style="fill:#5c1410;fill-opacity:1"
+             id="path3846"
+             d="M 372.23164,112.78881 C 372.23164,106.65618 367.24656,101.6711 361.11393,101.6711 354.9813,101.6711 349.99622,106.65618 349.99622,112.78881 349.99622,118.92144 354.9813,123.90652 361.11393,123.90652 367.24656,123.90652 372.23164,118.92144 372.23164,112.78881 z M 352.01986,112.78881 C 352.01986,107.76671 356.10417,103.69474 361.11393,103.69474 366.13603,103.69474 370.208,107.77905 370.208,112.78881 370.208,117.81091 366.12369,121.89522 361.11393,121.89522 356.09183,121.88288 352.01986,117.79857 352.01986,112.78881 z"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/red/marker-icon.png"
+             inkscape:export-xdpi="90"
+             inkscape:export-ydpi="90" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g3142"
+       transform="matrix(0.30681114,0,0,0.30681114,349.96936,79.564906)"
+       style="fill:#b3b3b3"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/node/marker-icon-2x.png"
+       inkscape:export-xdpi="179.23422"
+       inkscape:export-ydpi="179.23422">
+      <path
+         sodipodi:type="inkscape:offset"
+         inkscape:radius="0"
+         inkscape:original="M 382.3125 168.96875 C 360.6156 168.96875 343.03125 186.5531 343.03125 208.25 C 343.03125 229.9469 360.6156 247.53125 382.3125 247.53125 C 404.0094 247.53125 421.59375 229.9469 421.59375 208.25 C 421.59375 186.5531 404.0094 168.96875 382.3125 168.96875 z "
+         style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:8.76219082;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4435"
+         d="M 382.3125,168.96875 C 360.6156,168.96875 343.03125,186.5531 343.03125,208.25 343.03125,229.9469 360.6156,247.53125 382.3125,247.53125 404.0094,247.53125 421.59375,229.9469 421.59375,208.25 421.59375,186.5531 404.0094,168.96875 382.3125,168.96875 z"
+         transform="matrix(0.63731323,0,0,0.63731323,251.87394,92.136658)" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="M -471.28905,83.254306 C -472.0794,83.928186 -473.24412,83.928186 -474.03447,83.254306 -474.66674,82.713546 -489.56687,69.810076 -489.56687,58.404116 -489.56687,49.086336 -481.97954,41.498993 -472.66176,41.498993 -463.34398,41.498993 -455.75664,49.086336 -455.75664,58.404116 -455.75664,69.810076 -470.65677,82.705226 -471.28905,83.254306 z M -472.66176,78.803406 C -469.01784,75.392426 -462.97792,68.770146 -460.79823,62.630396 L -484.52529,62.630396 C -482.34559,68.778466 -476.30568,75.400746 -472.66176,78.803406 z"
+       id="path4"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-ydpi="89.617111" />
+    <g
+       transform="matrix(1,0,0,-1,-483.00094,176.09555)"
+       style="fill:none;stroke:none"
+       sketch:type="MSPage"
+       id="g8"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/path4.png"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-ydpi="89.617111">
+      <path
+         style="fill:#000000"
+         inkscape:connector-curvature="0"
+         d="M 19.540161,60.798943 C 16.322345,60.798943 13.10453,59.947169 10.265281,58.338261 7.426032,56.823995 5.1546329,54.552596 3.5457251,51.90263 -0.05065681,46.22571 -0.23994007,39.316871 2.8832337,32.88124 5.1546329,28.2438 7.3313904,24.458135 9.3188646,21.240319 13.008311,15.088613 15.849137,10.167249 18.2136,1.5564376 18.402884,0.89394617 19.065375,0.41916066 19.727867,0.41916066 20.391935,0.41916066 21.054427,0.89394617 21.242133,1.6510792 23.608173,10.167249 26.449,15.088613 30.043804,21.240319 31.936637,24.552776 34.208036,28.2438 36.479435,32.975881 39.507967,39.316871 39.224042,46.22571 35.722302,51.90263 34.113394,54.552596 31.747354,56.823995 29.002746,58.338261 26.068856,59.947169 22.85104,60.798943 19.540161,60.798943 L 19.540161,60.798943 z M 19.727867,7.233358 C 17.551109,13.574347 14.902721,17.927862 12.061894,22.849227 9.981356,26.256326 7.9938818,29.758066 5.7224826,34.300864 2.9778754,39.69386 3.1671586,45.468577 6.1956908,50.199081 7.5206736,52.47048 9.5081479,54.363313 11.779547,55.688295 14.145588,56.918637 16.793976,57.67577 19.540161,57.67577 22.377832,57.67577 25.027798,56.918637 27.393839,55.688295 29.665238,54.363313 31.747354,52.375838 33.072336,50.199081 36.006227,45.468577 36.290152,39.599218 33.640186,34.300864 31.368787,29.758066 29.381313,26.256326 27.299197,22.849227 24.459948,17.927862 21.906201,13.574347 19.727867,7.233358 L 19.727867,7.233358 z"
+         sketch:type="MSShapeGroup"
+         id="path10-3" />
+    </g>
+    <g
+       transform="matrix(2.7719513,0,0,-2.7719513,-664.93561,212.06653)"
+       id="g4"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/path4.png"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-ydpi="89.617111">
+      <g
+         id="g6">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 32.744,7.332 C 32.365,6.909 31.635,6.909 31.256,7.332 30.51,8.163 13,27.793 13,38 13,48.477 21.523,57 32,57 42.477,57 51,48.477 51,38 51,27.793 33.489,8.163 32.744,7.332 z M 32,55 C 22.626,55 15,47.374 15,38 15,29.68 28.632,13.41 32,9.518 35.368,13.409 49,29.676 49,38 49,47.374 41.374,55 32,55 z"
+           id="path8-6" />
+        <path
+           inkscape:connector-curvature="0"
+           d="M 32,47 C 27.038,47 23,42.963 23,38 23,37.447 22.552,37 22,37 21.448,37 21,37.447 21,38 21,44.065 25.935,49 32,49 32.552,49 33,48.553 33,48 33,47.447 32.552,47 32,47 z"
+           id="path10" />
+      </g>
+    </g>
+    <g
+       transform="translate(-138.37603,-181.87568)"
+       id="g4386"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/path4.png"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-ydpi="89.617111">
+      <path
+         inkscape:transform-center-x="-9.1302882"
+         inkscape:transform-center-y="-13.682172"
+         sodipodi:nodetypes="ccsssc"
+         style="opacity:0.2;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:6.75137854;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4226-3)"
+         id="path4378"
+         d="M 209.53831,274.11496 C 208.53107,274.91906 207.18612,274.91906 206.79682,274.11496 206.02934,272.53527 188.10665,235.21957 195.56186,215.81655 203.21429,195.90027 225.14232,179.69845 244.44518,179.69845 263.74804,179.69845 273.22562,195.90027 265.57319,215.81655 258.11798,235.21957 211.51786,272.53527 209.53831,274.11496 z"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.3610663,0,-0.01084956,0.28169176,-537.56551,402.44575)" />
+      <g
+         id="g4380"
+         transform="matrix(0.3581495,0,0,0.3581495,-521.03829,351.24697)">
+        <path
+           sodipodi:nodetypes="ccsssc"
+           style="fill:#ffffff;fill-opacity:1;stroke:#e6e6e6;stroke-width:10;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4382"
+           d="M 157.06233,355.04683 C 156.01176,356.21937 153.98824,356.21937 152.93767,355.04683 150.86979,352.74334 102.33292,298.32994 102.33292,270.03663 102.33292,240.9949 125.95827,217.36956 155,217.36956 184.04173,217.36956 207.66707,240.9949 207.66707,270.03663 207.66707,298.32994 159.12744,352.74334 157.06233,355.04683 z"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 153,227.6875 A 3.8744149,3.8744149 0 0 1 153.125,227.71875 L 153.125,227.6875 C 161.46623,227.54796 144.72039,227.75727 153.0625,227.6875 161.40461,227.61773 144.6576,227.6875 153,227.6875 z M 153.4375,235.375 A 3.8744149,3.8744149 0 0 1 152.875,235.4375 C 136.75251,235.87961 120.55382,252.44265 120.375,268.625 120.94644,280.21211 129.73941,293.78072 139.53125,309.03125 139.50212,308.98589 139.54383,309.04358 139.65625,309.21875 144.71229,316.21711 149.82196,323.02298 155,329.46875 156.46198,327.61182 157.84489,325.8165 159.46875,323.84375 159.50896,323.78928 159.55355,323.74195 159.59375,323.6875 172.60668,306.06177 185.04365,289.33129 189.3125,272.40625 190.35486,264.5195 187.40353,255.8293 181.9375,248.875 176.45015,241.89357 168.5604,236.84266 160.59375,235.8125 A 3.8744149,3.8744149 0 0 1 160.5625,235.8125 C 157.76802,235.44341 155.34002,235.31741 153.4375,235.4375 L 153.4375,235.375 z"
+           id="path4384"
+           style="fill:#4caf50;fill-opacity:1;stroke:none"
+           inkscape:original="M 152.78125 231.5625 C 134.18676 232.0724 116.61235 250.07771 116.5 268.71875 C 117.10755 282.02018 126.49561 295.88412 136.28125 311.125 C 136.32277 311.18966 136.36472 311.24779 136.40625 311.3125 C 142.49242 319.7397 148.63195 328.04312 155 335.6875 C 157.37406 332.70415 159.86883 329.45957 162.59375 326.15625 C 175.71321 308.38536 188.67031 291.24904 193.15625 273.03125 C 195.66391 254.62711 179.51448 234.35071 161.09375 231.96875 A 12.144072 12.144072 0 0 1 161.0625 231.96875 C 158.10586 231.57824 155.45875 231.41913 153.1875 231.5625 A 12.144072 12.144072 0 0 1 152.78125 231.5625 z "
+           inkscape:radius="-3.8740275"
+           sodipodi:type="inkscape:offset" />
+      </g>
+    </g>
+    <g
+       id="g4413"
+       transform="translate(-929.83056,-226.32239)"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/path4.png"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-ydpi="89.617111">
+      <path
+         inkscape:transform-center-y="-8.9783494"
+         inkscape:transform-center-x="-3.1834124"
+         sodipodi:type="arc"
+         style="opacity:0.2;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4240);enable-background:accumulate"
+         id="path4405"
+         sodipodi:cx="491.42856"
+         sodipodi:cy="177.89789"
+         sodipodi:rx="48.57143"
+         sodipodi:ry="48.57143"
+         d="M 539.99999,177.89789 C 539.99999,204.72315 518.25382,226.46932 491.42856,226.46932 464.6033,226.46932 442.85713,204.72315 442.85713,177.89789 442.85713,151.07263 464.6033,129.32646 491.42856,129.32646 518.25382,129.32646 539.99999,151.07263 539.99999,177.89789 z"
+         transform="matrix(0.38235721,0,-0.01287174,0.18484831,150.26079,548.42555)" />
+      <g
+         id="g4407"
+         transform="matrix(0.3581495,0,0,0.3581495,155.62222,491.89841)">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path4409"
+           sodipodi:cx="491.42856"
+           sodipodi:cy="177.89789"
+           sodipodi:rx="48.57143"
+           sodipodi:ry="48.57143"
+           d="M 539.99999,177.89789 C 539.99999,204.72315 518.25382,226.46932 491.42856,226.46932 464.6033,226.46932 442.85713,204.72315 442.85713,177.89789 442.85713,151.07263 464.6033,129.32646 491.42856,129.32646 518.25382,129.32646 539.99999,151.07263 539.99999,177.89789 z"
+           transform="matrix(1.0675911,0,0,1.0675911,-29.109048,34.939974)" />
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#4caf50;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path4411"
+           sodipodi:cx="382.32144"
+           sodipodi:cy="208.25504"
+           sodipodi:rx="39.285713"
+           sodipodi:ry="39.285713"
+           d="M 421.60715,208.25504 C 421.60715,229.95194 404.01834,247.54075 382.32144,247.54075 360.62454,247.54075 343.03573,229.95194 343.03573,208.25504 343.03573,186.55814 360.62454,168.96932 382.32144,168.96932 404.01834,168.96932 421.60715,186.55814 421.60715,208.25504 z"
+           transform="translate(113.21426,16.607139)" />
+      </g>
+    </g>
+    <g
+       inkscape:export-ydpi="89.617111"
+       inkscape:export-xdpi="89.617111"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/node/marker-icon_selected.png"
+       style="fill:#5591f5;fill-opacity:1"
+       transform="matrix(0.30681114,0,0,0.30681114,408.55821,79.564906)"
+       id="g3091">
+      <path
+         transform="matrix(0.63731323,0,0,0.63731323,251.87394,92.136658)"
+         d="M 382.3125,168.96875 C 360.6156,168.96875 343.03125,186.5531 343.03125,208.25 343.03125,229.9469 360.6156,247.53125 382.3125,247.53125 404.0094,247.53125 421.59375,229.9469 421.59375,208.25 421.59375,186.5531 404.0094,168.96875 382.3125,168.96875 z"
+         id="path3093"
+         style="color:#000000;fill:#5591f5;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:8.76219082000000071;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:original="M 382.3125 168.96875 C 360.6156 168.96875 343.03125 186.5531 343.03125 208.25 C 343.03125 229.9469 360.6156 247.53125 382.3125 247.53125 C 404.0094 247.53125 421.59375 229.9469 421.59375 208.25 C 421.59375 186.5531 404.0094 168.96875 382.3125 168.96875 z "
+         inkscape:radius="0"
+         sodipodi:type="inkscape:offset" />
+    </g>
+    <g
+       id="g3840"
+       transform="matrix(2.0278863,0,0,2.0278863,-220.67754,-149.69545)"
+       inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/crosshair/marker-icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g3834"
+         transform="matrix(0.3861502,0,0,0.3861502,23.342855,58.805624)"
+         style="opacity:0.3;fill:#0c56d0;fill-opacity:1;stroke:none"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/node/marker-icon_selected.png"
+         inkscape:export-xdpi="89.617111"
+         inkscape:export-ydpi="89.617111">
+        <path
+           sodipodi:type="inkscape:offset"
+           inkscape:radius="0"
+           inkscape:original="M 382.3125 168.96875 C 360.6156 168.96875 343.03125 186.5531 343.03125 208.25 C 343.03125 229.9469 360.6156 247.53125 382.3125 247.53125 C 404.0094 247.53125 421.59375 229.9469 421.59375 208.25 C 421.59375 186.5531 404.0094 168.96875 382.3125 168.96875 z "
+           style="color:#000000;fill:#0c56d0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.76219082;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path3837"
+           d="M 382.3125,168.96875 C 360.6156,168.96875 343.03125,186.5531 343.03125,208.25 343.03125,229.9469 360.6156,247.53125 382.3125,247.53125 404.0094,247.53125 421.59375,229.9469 421.59375,208.25 421.59375,186.5531 404.0094,168.96875 382.3125,168.96875 z"
+           transform="matrix(0.63731323,0,0,0.63731323,251.87394,92.136658)" />
+      </g>
+      <g
+         inkscape:export-ydpi="89.617111"
+         inkscape:export-xdpi="89.617111"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/node/marker-icon_selected.png"
+         style="opacity:0.9;fill:#4285f4;fill-opacity:1;stroke:none"
+         transform="matrix(0.23587151,0,0,0.23587151,97.809962,92.596858)"
+         id="g3060">
+        <path
+           transform="matrix(0.63731323,0,0,0.63731323,251.87394,92.136658)"
+           d="M 382.3125,168.96875 C 360.6156,168.96875 343.03125,186.5531 343.03125,208.25 343.03125,229.9469 360.6156,247.53125 382.3125,247.53125 404.0094,247.53125 421.59375,229.9469 421.59375,208.25 421.59375,186.5531 404.0094,168.96875 382.3125,168.96875 z"
+           id="path3062"
+           style="color:#000000;fill:#4285f4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.76219082;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           inkscape:original="M 382.3125 168.96875 C 360.6156 168.96875 343.03125 186.5531 343.03125 208.25 C 343.03125 229.9469 360.6156 247.53125 382.3125 247.53125 C 404.0094 247.53125 421.59375 229.9469 421.59375 208.25 C 421.59375 186.5531 404.0094 168.96875 382.3125 168.96875 z "
+           inkscape:radius="0"
+           sodipodi:type="inkscape:offset" />
+      </g>
+      <path
+         style="fill:#ffffff"
+         inkscape:connector-curvature="0"
+         d="M 214.6906,139.07081 C 211.07152,139.07081 208.12716,142.01517 208.12716,145.63425 208.12716,149.25321 211.07152,152.1977 214.6906,152.1977 218.30968,152.1977 221.25404,149.25321 221.25404,145.63425 221.25404,142.01517 218.30968,139.07081 214.6906,139.07081 z M 215.21988,151.11302 V 149.33945 H 214.16132 V 151.11316 C 211.54763,150.86256 209.46229,148.77723 209.21183,146.16353 H 210.98554 V 145.10498 H 209.21183 C 209.46242,142.49128 211.54763,140.40608 214.16132,140.15549 V 141.92906 H 215.21988 V 140.15549 C 217.83357,140.40595 219.91891,142.49115 220.16937,145.10498 H 218.39579 V 146.16353 H 220.1695 C 219.91891,148.77723 217.83357,150.86256 215.21988,151.11302 z"
+         id="path3064"
+         inkscape:export-filename="/home/bram/Projects/Workspace/idea/com.beligum.thomasmore.mobielegidsen/src/main/resources/assets/images/app/markers/crosshair/marker-icon.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+  </g>
+</svg>

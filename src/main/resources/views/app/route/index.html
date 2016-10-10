@@ -1,0 +1,279 @@
+#define($header-styles-extra)
+<link href="/assets/webjars/weather-icons/1.3.2/css/weather-icons.css" rel="stylesheet"/>
+<link href="/assets/webjars/OwlCarousel/1.3.2/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="/assets/webjars/OwlCarousel/1.3.2/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/webjars/video-js/5.8.8/video-js.css" rel="stylesheet" type="text/css">
+<link href="/assets/libs/video.js/skins/sublime.css" rel="stylesheet" type="text/css">
+<link href="/assets/libs/video.js/skins/sublime-edits.less" rel="stylesheet" type="text/css">
+<link href="/assets/webjars/leaflet/0.7.7/leaflet.css" rel="stylesheet" type="text/css">
+<link href="/assets/libs/leaflet-routing-machine/2.6.2/dist/leaflet-routing-machine.css" rel="stylesheet" type="text/css">
+
+<link href="/assets/styles/route-index.less" rel="stylesheet" type="text/css">
+#end
+
+#define($header-scripts-extra)
+#end
+
+#define($footer-scripts-extra)
+<script src="/assets/libs/jquery.matchHeight/jquery.matchHeight-min.js" type="application/javascript"></script>
+<script src="/assets/webjars/OwlCarousel/1.3.2/owl.carousel.js" type="application/javascript"></script>
+<script src="/assets/webjars/video-js/5.8.8/video.js"></script>
+<script src="/assets/scripts/video.js"></script>
+<script src="/assets/scripts/slider.js"></script>
+
+<script src="/assets/webjars/leaflet/0.7.7/leaflet.js" type="application/javascript"></script>
+<script src="/assets/webjars/leaflet-providers/1.1.2/leaflet-providers.js" type="application/javascript"></script>
+<script src="/assets/libs/leaflet-routing-machine/2.6.2/dist/leaflet-routing-machine.js" type="application/javascript"></script>
+<script src="/assets/libs/leaflet-omnivore/0.3.2/leaflet-omnivore.js" type="application/javascript"></script>
+<script src="/assets/scripts/main.js" type="application/javascript"></script>
+<script src="/assets/scripts/route-index.js" type="application/javascript"></script>
+<script>
+    base.plugin("mobielegidsen.RouteIndexStops", function ()
+    {
+        this.route = '$route.slug';
+
+        this.location = {
+            lat: "$route.location.latitude",
+            lon: "$route.location.longitude",
+            zoom: "$route.location.zoomLevel",
+        };
+    });
+</script>
+#end
+
+#define($body-args-extra)
+#end
+
+#define($body-html)
+
+
+<div class="container">
+
+    <div class="row header-wrapper">
+        <div class="col-xs-2 back">
+            <a href="/"><i class="fa fa-chevron-left prev-btn"></i></a>
+        </div>
+        <div class="col-xs-8 name">$route.region.name</div>
+    </div>
+
+    <div class="row title-wrapper">
+        <h1 class="col-xs-12 title">$route.name</h1>
+        <div class="col-xs-10 col-xs-offset-1 subtitle">
+            $route.description
+        </div>
+
+        <div class="col-xs-12 controls">
+        ##            <a class="btn btn-link" href="/route/$route.slug/overview"><i class="fa fa-hand-o-right"></i> start de wandelroute!</a>
+            <a class="btn btn-link" href="/route/$route.slug/map"><i class="fa fa-hand-o-right"></i> start de wandelroute!</a>
+        </div>
+    </div>
+
+    <div class="row photo-wrapper">
+        <div class="slider">
+            #foreach ($url in $route.images)
+                <img src="$url">
+            #end
+        </div>
+    </div>
+
+    <div class="row weather-wrapper">
+        <div class="col-sm-8 col-xs-12 today">
+            <div class="row">
+                <div class="col-xs-5 icon">
+                    <i class="$route.weatherForecast.today.wiIcon"></i>
+                </div>
+                <div class="col-xs-7 text">
+                    <p>
+                        $TOOLKIT.math.round($route.weatherForecast.today.main.temp)°<br/>
+                        <strong>vandaag in $route.weatherForecast.city.name</strong>: $route.weatherForecast.today.weather[0].description
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 forecast">
+            <div class="row tomorrow">
+                <div class="col-xs-8 text">
+                    <p>
+                        morgen <br/>
+                        <strong>$TOOLKIT.math.round($route.weatherForecast.todayPlus1.main.temp)°</strong>
+                    </p>
+                </div>
+                <div class="col-xs-4 icon">
+                    <i class="$route.weatherForecast.todayPlus1.wiIcon"></i>
+                </div>
+            </div>
+            <div class="row after-tomorrow">
+                <div class="col-xs-8 text">
+                    <p>
+                        overmorgen <br/>
+                        <strong>$TOOLKIT.math.round($route.weatherForecast.todayPlus2.main.temp)°</strong>
+                    </p>
+                </div>
+                <div class="col-xs-4 icon">
+                    <i class="$route.weatherForecast.todayPlus2.wiIcon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row practical-wrapper">
+        <div class="col-xs-12 col-md-6 accessibility">
+            <div class="title">
+                <i class="fa fa-bus"></i> Bereikbaarheid
+            </div>
+            <ul>
+                #foreach ($acc in $route.accessibility)
+                    <li><div class="title"><i class="fa fa-chevron-right"></i> $acc.title</div>
+                        <div class="description">$acc.instructions</div>
+                    </li>
+                #end
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6 map-wrapper">
+            <div class="map"></div>
+            <div class="metadata">
+                <div class="length">
+                    <div class="title">
+                        Totaal/km
+                    </div>
+                    <div class="subtitle">
+                        $route.length
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="title">
+                        Wandeltijd
+                    </div>
+                    <div class="subtitle">
+                        $route.duration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row start-tour-wrapper">
+        <div class="col-xs-2">
+            <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="col-xs-10">
+            <p>
+                <strong>Opgelet: deze applicatie is gemaakt om ter plaatse te gebruiken op een mobiel toestel.</strong>
+            </p>
+            <p>
+                Wil je de inhoud van deze wandeling toch al eens bekijken?
+            </p>
+            <p>
+                <a href="/route/$route.slug/map">Klik dan hier om ze op te starten.</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row surroundings-outer-wrapper">
+
+        <div class="col-xs-12 title">
+            <i class="fa fa-map-o"></i> In de buurt
+        </div>
+        <div class="col-xs-12 tabs">
+            <div class="row surroundings-tab-wrapper">
+                <div class="col-xs-6">
+                    <a class="btn btn-link show-lodging-btn active"><i class="fa fa-bed"></i>logeren</a>
+                </div>
+                <div class="col-xs-6">
+                    <a class="btn btn-link show-food-btn"><i class="fa fa-cutlery"></i>eten</a>
+                </div>
+            </div>
+
+            <div class="row surroundings-nav-wrapper">
+                <div class="col-xs-2">
+                    <a class="btn btn-link"><i class="fa fa-arrow-left prev-btn"></i></a>
+                </div>
+                <div class="col-xs-8 surroundings-item-name">
+                </div>
+                <div class="col-xs-2">
+                    <a class="btn btn-link"><i class="fa fa-arrow-right next-btn"></i></a>
+                </div>
+            </div>
+
+            <div class="row surroundings-wrapper">
+                <div class="lodging-wrapper active">
+                    #set($index=1)
+                    #foreach ($e in $route.surroundingEntries)
+                        #if ($e.type=='LODGING')
+                            <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
+                                <div class="slider">
+                                    #foreach ($media in $e.media)
+                                        <img src="$media.url"/>
+                                    #end
+                                </div>
+                                <div>
+                                    <div class="col-xs-7 address">
+                                        $e.address<br/>
+                                        $e.postalCode $e.city<br/>
+                                        $e.phoneNumber<br/>
+                                        <strong>$e.email</strong>
+                                    </div>
+                                    <div class="col-xs-5 map">
+                                        <a href="http://maps.google.com/maps?q=${e.location.latitude},${e.location.longitude}" target="_blank">
+                                            <span class="icon"><i class="fa fa-map-o"></i></span>
+                                            <span class="text">bekijk op kaart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            #set($index=$index+1)
+                        #end
+                    #end
+                </div>
+                <div class="food-wrapper">
+                    #set($index=1)
+                    #foreach ($e in $route.surroundingEntries)
+                        #if ($e.type=='FOOD')
+                            <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
+                                <div class="slider">
+                                    #foreach ($media in $e.media)
+                                        <img src="$media.url"/>
+                                    #end
+                                </div>
+                                <div>
+                                    <div class="col-xs-7 address">
+                                        $e.address<br/>
+                                        $e.postalCode $e.city<br/>
+                                        $e.phoneNumber<br/>
+                                        <strong>$e.email</strong>
+                                    </div>
+                                    <div class="col-xs-5 map">
+                                        <a href="http://maps.google.com/maps?q=${e.location.latitude},${e.location.longitude}" target="_blank">
+                                            <span class="icon"><i class="fa fa-map-o"></i></span>
+                                            <span class="text">bekijk op kaart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            #set($index=$index+1)
+                        #end
+                    #end
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row social-wrapper">
+
+        #set($smCurrUrl=$TOOLKIT.esc.url($REQUEST.uriInfo.requestUri))
+    ##set($smCurrUrl=$TOOLKIT.esc.url('http://rupelstreek.mobielegidsen.be/'))
+        #set($smPopupWidth=626)
+
+        <div class="col-xs-6">
+            <a class="btn btn-link" href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://www.facebook.com/sharer/sharer.php?u=$smCurrUrl', 'Deel $route.region.name op Facebook', '$smPopupWidth', '650'); return false;">deel deze route op<i class="fa fa-facebook-official"></i></a>
+        </div>
+        <div class="col-xs-6">
+            <a class="btn btn-link" href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://twitter.com/intent/tweet?url=$smCurrUrl&hashtags=mobielegidsen%2C$route.region.slug&text=', 'Deel $route.region.name op Twitter', '$smPopupWidth', '300'); return false;">deel deze route op<i class="fa fa-twitter-square"></i></a>
+        </div>
+    </div>
+
+</div>
+
+#end
+
+#parse("/templates/main.html")

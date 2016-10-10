@@ -1,0 +1,35 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----STYLES-----
+mobielegidsen-footer-route {
+
+  @import '/assets/styles/imports/common-btn.less';
+
+  .row {
+    &:extend(.no-gutters all);
+
+    [class^="col-"],
+    [class*=" col-"] {
+      .btn {
+        background-color: @themeBgColor;
+      }
+      &:nth-child(odd) {
+        .btn {
+          background-color: @themeDarkerBgColor;
+        }
+      }
+    }
+
+    .btn {
+      font-family: nunitobold, arial, sans-serif;
+      font-size: 14px;
+      color: @buttonTextColor;
+
+      .fa {
+        padding-left: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

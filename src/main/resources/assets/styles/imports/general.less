@@ -1,0 +1,66 @@
+//-----IMPORTS-----
+@import "/assets/styles/imports/common.less";
+
+//-----VARIABLES-----
+
+//-----MIXINS-----
+.back() {
+  //adapt it
+  @close-color: #FFFFFF;
+  @close-text-shadow: #000000;
+
+  //partly copy-pasted from bootstrap .close class
+  font-size: (@font-size-base * 1.5);
+  font-weight: @close-font-weight;
+  line-height: 1;
+  color: @close-color;
+  text-shadow: @close-text-shadow;
+  //.opacity(.2);
+
+  &:hover,
+  &:focus {
+    color: @close-color;
+    text-decoration: none;
+    cursor: pointer;
+    //.opacity(0.5);
+  }
+}
+
+//-----STYLES----
+html,
+body {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: @mainTextColor;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'nunitoblack', sans-serif;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+//-----CLASSES----
+.no-gutters > [class^="col-"],
+.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+//see http://getbootstrap.com.vn/examples/equal-height-columns/
+.row-eq-height {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}

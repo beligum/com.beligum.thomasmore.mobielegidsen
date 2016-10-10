@@ -1,0 +1,25 @@
+<meta property="blocks:title" content="Footer for route" lang="en">
+<meta property="blocks:title" content="Voettekst voor routes" lang="nl">
+<meta property="blocks:description" content="" lang="en">
+<meta property="blocks:description" content="" lang="nl">
+<meta property="blocks:icon" content="fa-minus">
+
+<link href="/assets/styles/imports/mobielegidsen/footer/route.less" rel="stylesheet">
+
+<template>
+    <div class="row">
+        #set($smCurrUrl=$TOOLKIT.esc.url($REQUEST.uriInfo.requestUri))
+    ##set($smCurrUrl=$TOOLKIT.esc.url('http://rupelstreek.mobielegidsen.be/'))
+        #set($smPopupWidth=626)
+        <div class="col-xs-6">
+            <a class="btn btn-link" href="#"
+               onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://www.facebook.com/sharer/sharer.php?u=$smCurrUrl', $MESSAGES.mobielegidsen.core.footerShareFacebook, '$smPopupWidth', '650'); return false;">$MESSAGES.mobielegidsen.core.footerShareRoute
+                <i class="fa fa-facebook-official"></i></a>
+        </div>
+        <div class="col-xs-6">
+            <a class="btn btn-link" href="#"
+               onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://twitter.com/intent/tweet?url=$smCurrUrl&hashtags=mobielegidsen&text=', $MESSAGES.mobielegidsen.core.footerShareTwitter, '$smPopupWidth', '300'); return false;">$MESSAGES.mobielegidsen.core.footerShareRoute
+                <i class="fa fa-twitter-square"></i></a>
+        </div>
+    </div>
+</template>

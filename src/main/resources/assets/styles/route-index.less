@@ -1,0 +1,508 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+@import '/assets/styles/imports/route-common.less';
+
+//-----VARIABLES----
+
+//-----STYLES---
+
+@desktopPadding: 40px;
+@media (min-width: @screen-md-min) {
+  body {
+    background-color: #F0F0F0;
+  }
+  .container {
+    background-color: #FFFFFF;
+
+    & > .row {
+      padding-left: @desktopPadding;
+      padding-right: @desktopPadding;
+    }
+  }
+}
+
+.transferPaddingToMargin() {
+  //make the trick with the background color work (transfer the padding to the margin)
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: @desktopPadding - (@grid-gutter-width/2);
+  margin-right: @desktopPadding - (@grid-gutter-width/2);
+}
+
+.header-wrapper {
+  background-color: @themeDarkerBgColor;
+}
+
+.title-wrapper {
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    margin-top: 40px;
+    background-color: transparent;
+
+    .title {
+      color: @themeBgColor;
+    }
+    .subtitle {
+      color: @themeDarkerBgColor;
+    }
+  }
+
+  background-color: @themeBgColor;
+  color: @buttonTextColor;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  .title {
+    font-family: nunitoblack, arial, sans-serif;
+    font-size: 36px;
+    //pushes the text out of the container
+    //text-transform: uppercase;
+  }
+  .subtitle {
+
+    overflow: hidden;
+    text-overflow-multiline: ellipsis;
+
+    .read-more-btn {
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none
+      }
+    }
+    .read-less-btn {
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .read-more-hidden {
+      display: none
+    }
+  }
+
+  .controls {
+    margin-top: 20px;
+    text-align: center;
+
+    //we don't show the start button here on big screens
+    @media (min-width: @screen-md-min) {
+      display: none;
+    }
+
+    .btn {
+      width: 260px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 5px solid @themeLighter2BgColor;
+
+      &:hover {
+        border-bottom: 3px solid @themeLighter2BgColor;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.photo-wrapper {
+
+  .slider {
+    //make it pretty on desktop
+    @media (min-width: @screen-md-min) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.nav-wrapper {
+  &:extend(.no-gutters all);
+
+  [class^="col-"],
+  [class*=" col-"] {
+    border-right: 1px solid @themeBgColor;
+    &:last-child {
+      border-right: 0px;
+    }
+  }
+
+  .btn {
+    border-bottom: 5px solid @themeBgColor;
+
+    .fa {
+      padding-left: 35px;
+    }
+  }
+}
+
+.weather-wrapper {
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    margin-top: 60px;
+  }
+
+  //is actually the bg color of the .forecast column, but it's smaller, so make it appear as long as .today
+  background-color: @buttonTextColor;
+
+  .today {
+    font-family: open_sansregular, arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: @themeBgColor;
+    background-color: @buttonTextColor;
+
+    .icon {
+      font-size: 60px;
+      text-align: center;
+    }
+    .text {
+      font-size: 16px;
+    }
+  }
+  .forecast {
+    color: @buttonTextColor;
+    background-color: @buttonTextColor;
+    //padding-top: 10px;
+
+    .row {
+      padding-top: 15px;
+
+      .text {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+      .icon {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      &:nth-child(odd) {
+        background-color: @themeBgColor;
+      }
+      &:nth-child(even) {
+        background-color: @themeDarkerBgColor;
+      }
+    }
+  }
+}
+
+.practical-wrapper {
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    margin-top: 60px;
+    .transferPaddingToMargin();
+  }
+
+  //this is actually the background for the accessibility container
+  background-color: @themeLighter4BgColor;
+
+  .accessibility {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & > .title {
+      font-size: 1.4em;
+      font-weight: 600;
+      padding: 10px 10px 20px 20px;
+    }
+    & > ul {
+      list-style: none;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 20px;
+      padding: 0;
+
+      & > li {
+        padding-left: 20px;
+
+        .title {
+          font-family: open_sansbold, arial, sans-serif;
+          font-size: 1.0em;
+          color: @themeLighter1BgColor;
+          font-weight: 400;
+        }
+        .description {
+          margin-top: 10px;
+          margin-left: 15px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .map-wrapper {
+
+    @media (min-width: @screen-md-min) {
+      //align the map with the title
+      margin-top: 60px;
+    }
+
+    position: relative;
+
+    //remove the bootstrap gutters (for desktop mode)
+    padding-right: 0;
+    padding-left: 0;
+
+    .map {
+      width: 100%;
+      overflow: hidden;
+
+      min-height: 240px;
+      @media (min-width: @screen-sm-min) {
+        min-height: 360px;
+      }
+    }
+    //workaround for https://github.com/Leaflet/Leaflet/issues/4051
+    .leaflet-container {
+      -ms-touch-action: inherit !important;
+      touch-action: inherit !important;
+    }
+    .metadata {
+      position: absolute;
+      top: 10px;
+      .clearfix();
+
+      .length,
+      .time {
+        float: left;
+        width: 150px;
+        font-family: nunitobold, arial, sans-serif;
+        color: @buttonTextColor;
+        background-color: @themeBgColor;
+        margin-left: 10px;
+        padding: 5px 10px;
+
+        .title {
+          font-size: 1em;
+        }
+        .subtitle {
+          font-size: 1.4em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.surroundings-outer-wrapper {
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    margin-top: 100px;
+    .transferPaddingToMargin();
+    background-color: transparent;
+  }
+
+  background-color: @themeLighter4BgColor;
+
+  & > .title {
+
+    //I think we can get away with deleting this on desktop
+    @media (min-width: @screen-md-min) {
+      display: none;
+    }
+
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  .tabs {
+    //make it pretty on desktop
+    @media (min-width: @screen-md-min) {
+      //adjust the width so it's not huge
+      .make-xs-column(10);
+      .make-xs-column-offset(1);
+    }
+
+    margin-bottom: 30px;
+
+    & > .row {
+      background-color: @buttonTextColor;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .surroundings-tab-wrapper {
+      &:extend(.no-gutters all);
+
+      .btn {
+        color: @buttonTextColor;
+
+        background-color: @themeBgColor;
+        &.active {
+          background-color: @themeDarkerBgColor;
+        }
+
+        .fa {
+          font-size: 24px;
+          padding-left: 0px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .surroundings-nav-wrapper {
+      background-color: @themeDarkerBgColor;
+
+      .btn {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+
+        @fontSize: 20px;
+        line-height: @fontSize;
+
+        .fa {
+          color: @buttonTextColor;
+          font-size: @fontSize;
+        }
+      }
+
+      .surroundings-item-name {
+        font-weight: 600;
+        font-size: 18px;
+        padding: 15px 12px;
+        text-align: center;
+        color: @buttonTextColor;
+      }
+    }
+
+    .surroundings-wrapper {
+
+      background-color: @themeLighter4BgColor;
+
+      .lodging-wrapper,
+      .food-wrapper {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      .lodging-wrapper,
+      .food-wrapper {
+
+        .item {
+          display: none;
+          &.active {
+            display: block;
+          }
+
+          .slider {
+            img {
+              &:extend(.img-responsive all);
+              object-fit: cover;
+              width: 100%;
+            }
+          }
+          .address {
+            word-wrap: break-word;
+            border-right: 1px solid #CCCCCC;
+            padding: 40px;
+
+            strong {
+              font-family: open_sansbold, arial, sans-serif;
+              font-size: 16px;
+              line-height: 1.18;
+              color: #404040;
+              font-weight: 400;
+            }
+          }
+          .map {
+            font-family: nunitobold, arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.18;
+            font-weight: 400;
+            padding: 40px 20px;
+
+            a {
+              color: #404040;
+            }
+
+            .icon {
+              display: block;
+              width: 100%;
+              text-align: center;
+              padding-bottom: 15px;
+
+              .fa {
+                font-size: 36px;
+              }
+            }
+            .text {
+              display: block;
+              width: 100%;
+              text-transform: uppercase;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.start-tour-wrapper {
+  //only show it on desktop
+  display: none;
+  @media (min-width: @screen-md-min) {
+    display: block;
+  }
+
+  .make-xs-column(8);
+  .make-xs-column-offset(2);
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  font-family: open_sansregular, arial, sans-serif;
+  font-size: 16px;
+
+  .fa {
+    color: @themeBgColor;
+    font-size: 50px;
+  }
+}
+
+.social-wrapper {
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    margin-top: 60px;
+  }
+
+  &:extend(.no-gutters all);
+
+  [class^="col-"],
+  [class*=" col-"] {
+    .btn {
+      background-color: @themeBgColor;
+    }
+    &:nth-child(odd) {
+      .btn {
+        background-color: @themeDarkerBgColor;
+      }
+    }
+  }
+
+  .btn {
+    font-family: nunitobold, arial, sans-serif;
+    font-size: 14px;
+    color: @buttonTextColor;
+
+    .fa {
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+  }
+}

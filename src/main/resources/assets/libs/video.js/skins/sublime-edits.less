@@ -1,0 +1,50 @@
+/*
+ * Sublime skin for video.js v5 adaptations as compared with the original
+ */
+
+.vjs-sublime-skin {
+
+  //fixes a css clash between VJS and bootstrap (relative inside relative because of the use of .embed-responsive)
+  position: absolute !important;//revert to default
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  .vjs-tech {
+    //stretch the content inside the bounding box (needed for semi-16:9 aspects)
+    object-fit: fill;
+  }
+
+  //show the big play button when paused
+  &.vjs-paused .vjs-big-play-button {
+    display: block;
+  }
+
+  //don't round the (entire) seek bar
+  .vjs-slider {
+    border-radius: 0px;
+
+    //don't track the mouse pointer with a seek time popup
+    .vjs-mouse-display {
+      display: none !important;
+    }
+
+    .vjs-play-progress {
+      //don't show a current time popup when hovering the seek bar
+      &:after {
+        display: none !important;
+      }
+    }
+  }
+
+  //don't round the play and load part of the seek bar
+  .vjs-progress-control {
+    .vjs-load-progres,
+    .vjs-play-progress {
+      border-radius: 0px;
+    }
+  }
+}

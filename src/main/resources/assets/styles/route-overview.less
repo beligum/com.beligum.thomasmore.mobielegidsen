@@ -1,0 +1,90 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+@import '/assets/styles/imports/route-common.less';
+
+//-----VARIABLES----
+
+//-----STYLES----
+.nav-wrapper {
+  &:extend(.no-gutters all);
+
+  [class^="col-"],
+  [class*=" col-"] {
+    border-right: 1px solid @themeBgColor;
+    &:last-child {
+      border-right: 0px;
+    }
+  }
+
+  .btn {
+    border-bottom: 5px solid @themeBgColor;
+    background-color: @themeLighter1BgColor;
+    color: @buttonTextColor;
+
+    .fa {
+      padding-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.stops-wrapper {
+  .stop {
+    display: block;
+    color: @mainTextColor;
+    background-color: @themeLighter3BgColor;
+    &:nth-child(odd) {
+      background-color: transparent;
+    }
+
+    .time {
+      padding-top: 25px;
+      font-family: open_sansregular, arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.18;
+      text-align: center;
+    }
+    .type {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      background: url("/assets/images/app/bg-route-type.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      text-align: center;
+
+      .fa {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        line-height: 35px;
+        background-color: @themeLighter1BgColor;
+        color: #FFFFFF;
+        font-size: 22px;
+        display: inline-block;
+        border: 4px solid #FFFFFF;
+        text-align: center;
+      }
+    }
+    .description {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 0px;
+
+      font-family: open_sansbold, arial, sans-serif;
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.18;
+      font-weight: 400;
+    }
+    .goto {
+      padding-top: 20px;
+      text-align: center;
+
+      .fa {
+        color: @themeLighter3BgColor;
+        font-size: 30px;
+      }
+    }
+  }
+}

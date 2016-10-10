@@ -1,0 +1,43 @@
+#define($header-styles-extra)
+<link href="/assets/styles/routes.less" rel="stylesheet" type="text/css">
+#end
+
+#define($header-scripts-extra)
+#end
+
+#define($footer-scripts-extra)
+
+#end
+
+#define($body-args-extra)
+#end
+
+#define($body-html)
+
+<div class="container">
+
+    <div class="row">
+        <div class="intro">
+            <h2 class="text-center">$region.name</h2>
+            <p class="text-center">ontdek onze routes</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="routes">
+            <div class="route color-1">
+                <img src="/assets/images/demo/routes/schorre/Schorre.jpg" class="img-responsive" alt="De Schorre">
+                <div class="caption">
+                    <h3>De Schorre</h3>
+                    <p>De Schorre is een put vol pit. Je vindt er een brede waaier aan recreatie- en sportmogelijkheden. Het is een prachtige streek om te wandelen en te fietsen!</p>
+                    <a href="/route/de-schorre">ontdek deze route</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+#end
+
+#parse("/templates/main.html")

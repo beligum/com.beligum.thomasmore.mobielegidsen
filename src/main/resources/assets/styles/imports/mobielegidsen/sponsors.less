@@ -1,0 +1,55 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----STYLES-----
+mobielegidsen-sponsors {
+
+  margin: 0px 40px 60px 40px;
+
+  .header {
+    @verPadding: 40px;
+    padding-top: @verPadding;
+    padding-bottom: @verPadding;
+    text-align: center;
+  }
+  .grid {
+    text-align: left;
+    width: 100%;
+    border-left: 1px solid #C6C6C6;
+
+    a {
+      display: block;
+      .make-xs-column(12);
+      .make-sm-column(4);
+      .make-md-column(3);
+
+      border: 1px solid #C6C6C6;
+      //make the borders collapse
+      margin-top: -1px;
+      margin-left: -1px;
+
+      padding: 30px;
+      text-align: center;
+
+      img {
+        display: block;
+        margin: 0 auto;
+
+        max-width: 120px;
+        vertical-align: middle;
+
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        .opacity(0.6);
+      }
+
+      &:hover {
+        img {
+          -webkit-filter: none;
+          filter: none;
+          .opacity(1.0);
+        }
+      }
+    }
+  }
+}
