@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+    <base>
+        <core>
+            <log>
+                <level>INFO</level>
+            </log>
+
+            <production>false</production>
+
+            <domain>
+                <main>http://localhost:8080/</main>
+                <alias></alias>
+            </domain>
+            <languages>nl</languages>
+
+            <server>
+                <http-server-port>8080</http-server-port>
+                <custom-resources-folder>
+                    <folder>/path/to/local/storage/media/</folder>
+                </custom-resources-folder>
+            </server>
+
+            <database>
+                <server-hostname>localhost</server-hostname>
+                <server-database>thomasmore-mobielegidsen</server-database>
+                <server-username>devel</server-username>
+                <server-password>devel</server-password>
+
+                <properties>
+                    <!--<property>-->
+                        <!--<name>hibernate.show_sql</name>-->
+                        <!--<value>false</value>-->
+                    <!--</property>-->
+                </properties>
+            </database>
+
+            <security>
+                <cipher-key>8irVfdCdHGsvUBn/lCaycQ==</cipher-key>
+            </security>
+
+            <email>
+                <use-auth>false</use-auth>
+                <use-tls>false</use-tls>
+                <use-ssl>false</use-ssl>
+
+                <hostname>localhost</hostname>
+                <port>25</port>
+
+                <username></username>
+                <password></password>
+
+                <from-address>Unconfigured email user &lt;no-reply@beligum.com&gt;</from-address>
+                <admin-address>Administrator &lt;admin@beligum.com&gt;</admin-address>
+            </email>
+        </core>
+    </base>
+
+    <blocks>
+        <core>
+            <transactions>
+                <transaction-manager>com.atomikos.icatch.jta.UserTransactionManager</transaction-manager>
+                <properties>
+                    <property>
+                        <!-- Tell Atomikos to get it's properties from here (actually system variables) instead of a properties file -->
+                        <name>com.atomikos.icatch.no_file</name>
+                        <value>1</value>
+                    </property>
+                    <property>
+                        <name>com.atomikos.icatch.service</name>
+                        <value>com.atomikos.icatch.standalone.UserTransactionServiceFactory</value>
+                    </property>
+                    <property>
+                        <name>com.atomikos.icatch.log_base_dir</name>
+                        <value>/path/to/local/storage/tx/</value>
+                    </property>
+                </properties>
+            </transactions>
+            <pages>
+                <store-path>/path/to/local/storage/pages</store-path>
+                <journal-dir>/path/to/local/storage/journal</journal-dir>
+                <file-ext>.html</file-ext>
+                <lock-file-ext>.lock</lock-file-ext>
+                <hdfs>
+                    <properties />
+                </hdfs>
+                <main-index>
+                    <dir>/path/to/local/storage/index</dir>
+                </main-index>
+                <triple-store>
+                    <dir>/path/to/local/storage/triplestore</dir>
+                </triple-store>
+            </pages>
+            <rdf>
+                <ontology>
+                    <prefix>mg</prefix>
+                    <uri>http://www.mobielegidsen.be/ontology/</uri>
+                </ontology>
+            </rdf>
+            <geonames>
+                <username>beligum</username>
+            </geonames>
+        </core>
+
+        <media>
+            <webhdfs>
+                <user>bram</user>
+                <filesystems>
+                    <filesystem>
+                        <scheme>blocks</scheme>
+                        <class-old>com.beligum.blocks.media.filesystem.hdfs.BlocksFileSystem</class-old>
+                        <class-new>com.beligum.blocks.media.filesystem.hdfs.BlocksFS</class-new>
+                    </filesystem>
+                </filesystems>
+                <enable-auto-proxy>true</enable-auto-proxy>
+            </webhdfs>
+
+            <mount-points>
+                <mount-point>
+                    <name>public</name>
+                    <uri>blocks:///path/to/local/storage/media</uri>
+                </mount-point>
+            </mount-points>
+
+            <watch>
+                <grid-processor>
+                    <enable>true</enable>
+                    <check-on-start>false</check-on-start>
+                    <jppf-properties>
+                        <property>
+                            <name>processing.threads</name>
+                            <value>1</value>
+                        </property>
+                        <property>
+                            <name>remote.debug.port</name>
+                            <value>8001</value>
+                        </property>
+                    </jppf-properties>
+                </grid-processor>
+
+                <parser-presets>
+                    <parser-preset>
+                        <mime-type-pattern>image/*</mime-type-pattern>
+                        <class>com.beligum.blocks.media.proxy.presets.DefaultImagePreset</class>
+                    </parser-preset>
+                    <parser-preset>
+                        <mime-type-pattern>video/*</mime-type-pattern>
+                        <class>com.beligum.blocks.media.proxy.presets.DefaultVideoPreset</class>
+                    </parser-preset>
+                </parser-presets>
+            </watch>
+        </media>
+    </blocks>
+
+    <thomasmore>
+        <mobielegidsen>
+            <weather>
+                <api>
+                    <key></key>
+                    <lang>nl</lang>
+                    <units>metric</units>
+                </api>
+            </weather>
+            <map>
+                <mapquest-key></mapquest-key>
+                <mapbox-key></mapbox-key>
+                <router>
+                    <endpoint>http://localhost:8989</endpoint>
+                    <key></key>
+                    <vehicle>foot</vehicle>
+                </router>
+            </map>
+            <tp-access>
+                <api-base-url>https://api.tpaccess.be/</api-base-url>
+                <token-path>/oauth/v2/token</token-path>
+                <client-id></client-id>
+                <client-secret></client-secret>
+                <cache-folder>/path/to/local/storage/tpaccess</cache-folder>
+            </tp-access>
+        </mobielegidsen>
+    </thomasmore>
+</configuration>
