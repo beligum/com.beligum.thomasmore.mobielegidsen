@@ -2,27 +2,67 @@
 @import '/assets/styles/imports/general.less';
 
 //-----STYLES-----
-mobielegidsen-footer-default {
-  text-align: center;
-  padding: 20px 20px 40px 20px;
+// Set the fixed height of the footer here
+@footer-height: 160px;
 
-  background-color: #CE0E11;
+// Sticky footer styles
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  // Margin bottom by footer height
+  margin-bottom: @footer-height;
 
-  .header {
-    font-family: 'nunitobold', sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
+  //when in edit mode, put the margin on the wrapper instead
+  &.@{BODY_EDIT_MODE_CLASS} {
+    //when using a sticky footer, the body has a margin bottom which creates a false space in edit mode
+    //because it has an explicit height set (see JS) -> avoid that and set it on the wrapper instead
+    margin-bottom: 0;
+
+    //Note: we set it on the inner wrapper (and not on .@{PAGE_CONTENT_CLASS})
+    // because that one already has an explicit height (see JS) set and it doesn't work
+    blocks-layout {
+      margin-bottom: @footer-height;
+    }
   }
-  .buttons {
-    a {
+}
+
+mobielegidsen-footer-default {
+
+  //styling for sticky footer
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @footer-height;
+
+  //general styling
+  footer {
+    //note: don't use the no-gutter arg because it's wrapped in a container
+    .make-row();
+    .clearfix();
+
+    text-align: center;
+    padding: 20px 20px 33px 20px;
+
+    background-color: #CE0E11;
+
+    .header {
+      font-family: 'nunitobold', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       color: #FFFFFF;
-      padding: 0px;
-      text-decoration: none;
-      border-bottom: 0;
-      margin: 0 20px;
+    }
+    .buttons {
+      a {
+        color: #FFFFFF;
+        padding: 0px;
+        text-decoration: none;
+        border-bottom: 0;
+        margin: 0 20px;
+      }
     }
   }
 }

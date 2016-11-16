@@ -1,0 +1,80 @@
+//-----IMPORTS-----
+@import '/assets/styles/imports/general.less';
+
+//-----MIXINS-----
+
+//-----STYLES-----
+mobielegidsen-weather {
+
+  .make-row(0);
+  .clearfix();
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    //margin-top: 60px;
+  }
+
+  //is actually the bg color of the .forecast column, but it's smaller, so make it appear as long as .today
+  background-color: @buttonTextColor;
+
+  .today {
+    .make-sm-column(8);
+    .make-xs-column(12);
+    font-family: open_sansregular, arial, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: @themeBgColor;
+    background-color: @buttonTextColor;
+
+    .wrap {
+      .make-row();
+      .clearfix();
+
+      .icon {
+        .make-xs-column(5);
+        font-size: 60px;
+        text-align: center;
+      }
+      .text {
+        .make-xs-column(7);
+        font-size: 16px;
+      }
+    }
+  }
+
+  .forecast {
+    .make-sm-column(4);
+    .make-xs-column(12);
+    color: @buttonTextColor;
+    background-color: @buttonTextColor;
+    //padding-top: 10px;
+
+    .tomorrow,
+    .after-tomorrow {
+      .make-row();
+      .clearfix();
+      padding-top: 15px;
+
+      .text {
+        .make-xs-column(8);
+        font-size: 16px;
+        padding-left: 20px;
+      }
+      .icon {
+        .make-xs-column(4);
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      &:nth-child(odd) {
+        background-color: @themeBgColor;
+      }
+      &:nth-child(even) {
+        background-color: @themeDarkerBgColor;
+      }
+    }
+  }
+
+}

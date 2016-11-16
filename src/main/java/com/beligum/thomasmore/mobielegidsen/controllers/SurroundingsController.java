@@ -50,7 +50,7 @@ public class SurroundingsController extends DefaultTemplateController
             // so let's group the locations around the schorre together.
             final double radiusKm = 10.0;
             Schorre schorre = new Schorre();
-            double[] coordinates = this.getCoordinates();
+            double[] coordinates = getCoordinates();
             double distanceToSchorre = this.haversine(coordinates[0], coordinates[1], schorre.getLocation().getLatitude(), schorre.getLocation().getLongitude());
             if (distanceToSchorre < radiusKm) {
                 coordinates = new double[] { schorre.getLocation().getLatitude(), schorre.getLocation().getLongitude() };
@@ -64,33 +64,7 @@ public class SurroundingsController extends DefaultTemplateController
     }
 
     //-----PUBLIC METHODS-----
-    public Iterator<Node> getCateringEntries()
-    {
-        return Iterables.filter(this.horecaEntries, new Predicate<Node>()
-        {
-            @Override
-            public boolean apply(Node p)
-            {
-                return TPAccessRepository.isFoodRelatedEntry(p);
-            }
-        }).iterator();
-    }
-    public Iterator<Node> getLodgingEntries()
-    {
-        return Iterables.filter(this.horecaEntries, new Predicate<Node>()
-        {
-            @Override
-            public boolean apply(Node p)
-            {
-                return TPAccessRepository.isLodgingRelatedEntry(p);
-            }
-        }).iterator();
-    }
-
-    //-----PROTECTED METHODS-----
-
-    //-----PRIVATE METHODS-----
-    private double[] getCoordinates() throws IOException
+    public static double[] getCoordinates() throws IOException
     {
         double[] retVal = new double[2];
 
@@ -121,6 +95,32 @@ public class SurroundingsController extends DefaultTemplateController
 
         return retVal;
     }
+    public Iterator<Node> getCateringEntries()
+    {
+        return Iterables.filter(this.horecaEntries, new Predicate<Node>()
+        {
+            @Override
+            public boolean apply(Node p)
+            {
+                return TPAccessRepository.isFoodRelatedEntry(p);
+            }
+        }).iterator();
+    }
+    public Iterator<Node> getLodgingEntries()
+    {
+        return Iterables.filter(this.horecaEntries, new Predicate<Node>()
+        {
+            @Override
+            public boolean apply(Node p)
+            {
+                return TPAccessRepository.isLodgingRelatedEntry(p);
+            }
+        }).iterator();
+    }
+
+    //-----PROTECTED METHODS-----
+
+    //-----PRIVATE METHODS-----
     //see https://rosettacode.org/wiki/Haversine_formula#Java
     private double haversine(double lat1, double lon1, double lat2, double lon2)
     {

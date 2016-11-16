@@ -36,17 +36,17 @@
         <dependency>
             <groupId>com.beligum.blocks</groupId>
             <artifactId>blocks-core</artifactId>
-            <version>0.2.30</version>
+            <version>0.2.34</version>
         </dependency>
         <dependency>
             <groupId>com.beligum.blocks</groupId>
             <artifactId>blocks-media-core</artifactId>
-            <version>0.2.15</version>
+            <version>0.2.20-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.beligum.blocks</groupId>
             <artifactId>blocks-media-proxy</artifactId>
-            <version>0.0.16</version>
+            <version>0.0.21-SNAPSHOT</version>
         </dependency>
 
         <dependency>

@@ -2,33 +2,66 @@
 @import '/assets/styles/imports/general.less';
 
 //-----STYLES-----
+// Set the fixed height of the footer here
+@footer-height: 54px;
+
+// Sticky footer styles
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  // Margin bottom by footer height
+  margin-bottom: @footer-height;
+
+  //when in edit mode, put the margin on the wrapper instead
+  &.@{BODY_EDIT_MODE_CLASS} {
+    //when using a sticky footer, the body has a margin bottom which creates a false space in edit mode
+    //because it has an explicit height set (see JS) -> avoid that and set it on the wrapper instead
+    margin-bottom: 0;
+
+    //Note: we set it on the inner wrapper (and not on .@{PAGE_CONTENT_CLASS})
+    // because that one already has an explicit height (see JS) set and it doesn't work
+    blocks-layout {
+      margin-bottom: @footer-height;
+    }
+  }
+}
+
 mobielegidsen-footer-route {
 
   @import '/assets/styles/imports/common-btn.less';
 
-  .row {
-    &:extend(.no-gutters all);
+  //styling for sticky footer
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @footer-height;
 
-    [class^="col-"],
-    [class*=" col-"] {
+  //general styling
+  footer {
+    .make-row();
+    .clearfix();
+
+    .left,
+    .right {
+      .make-xs-column(6, 0);
+
       .btn {
         background-color: @themeBgColor;
+        font-family: nunitobold, arial, sans-serif;
+        font-size: 14px;
+        color: @buttonTextColor;
+
+        .fa {
+          padding-left: 15px;
+          vertical-align: middle;
+        }
       }
       &:nth-child(odd) {
         .btn {
           background-color: @themeDarkerBgColor;
         }
-      }
-    }
-
-    .btn {
-      font-family: nunitobold, arial, sans-serif;
-      font-size: 14px;
-      color: @buttonTextColor;
-
-      .fa {
-        padding-left: 15px;
-        vertical-align: middle;
       }
     }
   }

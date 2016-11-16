@@ -14,103 +14,102 @@
 <script src="/assets/scripts/imports/mobielegidsen/surroundings.js" type="application/javascript"></script>
 
 <template>
-    <div class="row surroundings-outer-wrapper">
-
-        <div class="col-xs-12 title">
-            <i class="fa fa-map-o"></i> In de buurt
+    <div class="title">
+        <i class="fa fa-map-o"></i> In de buurt
+    </div>
+    <div class="tabs">
+        <div class="surroundings-tab-wrapper">
+            <div class="left">
+                <a class="btn btn-link show-lodging-btn active"><i class="fa fa-bed"></i>logeren</a>
+            </div>
+            <div class="right">
+                <a class="btn btn-link show-food-btn"><i class="fa fa-cutlery"></i>eten</a>
+            </div>
         </div>
-        <div class="col-xs-12 tabs">
-            <div class="row surroundings-tab-wrapper">
-                <div class="col-xs-6">
-                    <a class="btn btn-link show-lodging-btn active"><i class="fa fa-bed"></i>logeren</a>
-                </div>
-                <div class="col-xs-6">
-                    <a class="btn btn-link show-food-btn"><i class="fa fa-cutlery"></i>eten</a>
-                </div>
-            </div>
 
-            <div class="row surroundings-nav-wrapper">
-                <div class="col-xs-2">
-                    <a class="btn btn-link"><i class="fa fa-arrow-left prev-btn"></i></a>
-                </div>
-                <div class="col-xs-8 surroundings-item-name">
-                </div>
-                <div class="col-xs-2">
-                    <a class="btn btn-link"><i class="fa fa-arrow-right next-btn"></i></a>
-                </div>
+        <div class="surroundings-nav-wrapper">
+            <div class="prev">
+                <a class="btn btn-link"><i class="fa fa-arrow-left prev-btn"></i></a>
             </div>
+            <div class="surroundings-item-name">
+            </div>
+            <div class="next">
+                <a class="btn btn-link"><i class="fa fa-arrow-right next-btn"></i></a>
+            </div>
+        </div>
 
-            <div class="row surroundings-wrapper">
-                <div class="lodging-wrapper active">
-                    #set($index=1)
-                    #foreach ($e in $CONTROLLER.lodgingEntries)
-                        <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
-                            <div class="slider">
-                                #if($e.images)
-                                    #foreach ($image in $e.images)
-                                        <img src="/webhdfs/v1/$image.cachedUrl">
-                                    #end
-                                #else
-                                    <img src="/assets/images/blocks/placeholder_image_1.png">
+        <div class="surroundings-wrapper">
+            <div class="lodging-wrapper active">
+                #set($index=1)
+                #foreach ($e in $CONTROLLER.lodgingEntries)
+                    <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
+                        <div class="slider">
+                            #if($e.images)
+                                #foreach ($image in $e.images)
+                                    <img src="/webhdfs/v1/$image.cachedUrl">
+                                #end
+                            #else
+                                <img src="/assets/images/blocks/placeholder_image_1.png">
+                            #end
+                        </div>
+                        <div class="info">
+                            <div class="address">
+                                $e.title<br/>
+                                #if($e.address && !$e.address.empty)
+                                    $!e.address[0].field_straatnaam  $!e.address[0].field_huisnummer <br/>
+                                    $!e.address[0].field_postcode $!e.address[0].field_gemeente<br/>
+                                ##                                        $e.phoneNumber<br/>
+                                ##                                        <strong>$e.email</strong>
                                 #end
                             </div>
-                            <div>
-                                <div class="col-xs-7 address">
-                                    #if($e.address && !$e.address.empty)
-                                        $!e.address[0].field_straatnaam  $!e.address[0].field_huisnummer <br/>
-                                        $!e.address[0].field_postcode $!e.address[0].field_gemeente<br/>
-##                                        $e.phoneNumber<br/>
-##                                        <strong>$e.email</strong>
-                                    #end
-                                </div>
-                                <div class="col-xs-5 map">
-                                    #if($e.coordinates && !$e.coordinates.empty)
-                                        <a href="http://maps.google.com/maps?q=${e.coordinates[0].latitude},${e.coordinates[0].longitude}" target="_blank">
-                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                            <span class="text">bekijk op kaart</span>
-                                        </a>
-                                    #end
-                                </div>
-                            </div>
-                        </div>
-                        #set($index=$index+1)
-                    #end
-                </div>
-                <div class="food-wrapper">
-                    #set($index=1)
-                    #foreach ($e in $CONTROLLER.cateringEntries)
-                        <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
-                            <div class="slider">
-                                #if($e.images)
-                                    #foreach ($image in $e.images)
-                                        <img src="/webhdfs/v1/$image.cachedUrl">
-                                    #end
-                                #else
-                                    <img src="/assets/images/blocks/placeholder_image_1.png">
+                            <div class="map">
+                                #if($e.coordinates && !$e.coordinates.empty)
+                                    <a href="http://maps.google.com/maps?q=${e.coordinates[0].latitude},${e.coordinates[0].longitude}" target="_blank">
+                                        <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                        <span class="text">bekijk op kaart</span>
+                                    </a>
                                 #end
                             </div>
-                            <div>
-                                <div class="col-xs-7 address">
-                                    #if($e.address && !$e.address.empty)
-                                        $!e.address[0].field_straatnaam  $!e.address[0].field_huisnummer <br/>
-                                        $!e.address[0].field_postcode $!e.address[0].field_gemeente<br/>
-                                    ##                                        $e.phoneNumber<br/>
-                                    ##                                        <strong>$e.email</strong>
-                                    #end
-                                </div>
-                                <div class="col-xs-5 map">
-                                    #if($e.coordinates && !$e.coordinates.empty)
-                                        <a href="http://maps.google.com/maps?q=${e.coordinates[0].latitude},${e.coordinates[0].longitude}" target="_blank">
-                                            <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                            <span class="text">bekijk op kaart</span>
-                                        </a>
-                                    #end
-                                </div>
+                        </div>
+                    </div>
+                    #set($index=$index+1)
+                #end
+            </div>
+            <div class="food-wrapper">
+                #set($index=1)
+                #foreach ($e in $CONTROLLER.cateringEntries)
+                    <div class="item #if($index==1)active#end" data-id="$index" data-name="$e.title">
+                        <div class="slider">
+                            #if($e.images)
+                                #foreach ($image in $e.images)
+                                    <img src="/webhdfs/v1/$image.cachedUrl">
+                                #end
+                            #else
+                                <img src="/assets/images/blocks/placeholder_image_1.png">
+                            #end
+                        </div>
+                        <div class="info">
+                            <div class="address">
+                                $e.title<br/>
+                                #if($e.address && !$e.address.empty)
+                                    $!e.address[0].field_straatnaam  $!e.address[0].field_huisnummer <br/>
+                                    $!e.address[0].field_postcode $!e.address[0].field_gemeente<br/>
+                                ##                                        $e.phoneNumber<br/>
+                                ##                                        <strong>$e.email</strong>
+                                #end
+                            </div>
+                            <div class="map">
+                                #if($e.coordinates && !$e.coordinates.empty)
+                                    <a href="http://maps.google.com/maps?q=${e.coordinates[0].latitude},${e.coordinates[0].longitude}" target="_blank">
+                                        <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                        <span class="text">bekijk op kaart</span>
+                                    </a>
+                                #end
                             </div>
                         </div>
-                        #set($index=$index+1)
-                    #end
-                </div>
+                    </div>
+                    #set($index=$index+1)
+                #end
             </div>
         </div>
     </div>

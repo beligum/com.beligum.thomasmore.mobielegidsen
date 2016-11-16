@@ -65,3 +65,5 @@ crashlytics.properties
 crashlytics-build.properties
 #video files
 src/main/resources/assets/videos
+*.tlog
+

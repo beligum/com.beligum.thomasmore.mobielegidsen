@@ -13,141 +13,170 @@
 
 //-----STYLES-----
 mobielegidsen-surroundings {
-  .surroundings-outer-wrapper {
+
+  .make-row(0);
+  .clearfix();
+
+  //make it pretty on desktop
+  @media (min-width: @screen-md-min) {
+    //margin-top: 100px;
+    background-color: transparent;
+  }
+
+  background-color: @themeLighter4BgColor;
+
+  .btn,
+  .btn:visited,
+  .btn:hover,
+  .btn:active {
+    .border-radius(0, 0, 0, 0) !important;
+    .box-shadow(none) !important;
+    display: inline-block;
+    width: 100%;
+    font-family: nunitobold, arial, sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    border: none;
+  }
+
+  & > .title {
+
+    .make-xs-column(12, 0);
+
+    //I think we can get away with deleting this on desktop
+    @media (min-width: @screen-md-min) {
+      display: none;
+    }
+
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  .tabs {
+
+    .make-xs-column(12, 0);
 
     //make it pretty on desktop
     @media (min-width: @screen-md-min) {
-      margin-top: 100px;
-      .transferPaddingToMargin();
-      background-color: transparent;
+      //adjust the width so it's not huge
+      .make-xs-column(10, 0);
+      .make-xs-column-offset(1);
     }
 
-    background-color: @themeLighter4BgColor;
+    //& > .row {
+    //  background-color: @buttonTextColor;
+    //  margin-left: 0px;
+    //  margin-right: 0px;
+    //}
 
-    & > .title {
+    .surroundings-tab-wrapper {
 
-      //I think we can get away with deleting this on desktop
-      @media (min-width: @screen-md-min) {
+      .make-row();
+      .clearfix();
+
+      .left,
+      .right {
+        .make-xs-column(6, 0);
+      }
+
+      .btn {
+        color: @buttonTextColor;
+
+        background-color: @themeBgColor;
+        &.active {
+          background-color: @themeDarkerBgColor;
+        }
+
+        .fa {
+          font-size: 24px;
+          padding-left: 0px;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .surroundings-nav-wrapper {
+
+      .make-row();
+      .clearfix();
+
+      background-color: @themeDarkerBgColor;
+
+      .btn {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+
+        @fontSize: 20px;
+        line-height: @fontSize;
+
+        .fa {
+          color: @buttonTextColor;
+          font-size: @fontSize;
+        }
+      }
+
+      .prev,
+      .next {
+        .make-xs-column(2, 0);
+      }
+
+      .surroundings-item-name {
+
+        .make-xs-column(8, 0);
+
+        font-weight: 600;
+        font-size: 18px;
+        padding: 15px 12px;
+        text-align: center;
+        color: @buttonTextColor;
+      }
+    }
+
+    .surroundings-wrapper {
+
+      .make-row();
+      .clearfix();
+
+      background-color: @themeLighter4BgColor;
+
+      .lodging-wrapper,
+      .food-wrapper {
         display: none;
-      }
 
-      font-size: 1.4em;
-      font-weight: 600;
-      padding-top: 30px;
-      padding-bottom: 25px;
-      padding-left: 20px;
-    }
-
-    .btn,
-    .btn:visited,
-    .btn:hover,
-    .btn:active {
-      .border-radius(0, 0, 0, 0) !important;
-      .box-shadow(none) !important;
-      display: inline-block;
-      width: 100%;
-      font-family: nunitobold, arial, sans-serif;
-      font-size: 18px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      text-decoration: none;
-      border: none;
-    }
-
-    .tabs {
-      //make it pretty on desktop
-      @media (min-width: @screen-md-min) {
-        //adjust the width so it's not huge
-        .make-xs-column(10);
-        .make-xs-column-offset(1);
-      }
-
-      margin-bottom: 30px;
-
-      & > .row {
-        background-color: @buttonTextColor;
-        margin-left: 0px;
-        margin-right: 0px;
-      }
-
-      .surroundings-tab-wrapper {
-        &:extend(.no-gutters all);
-
-        .btn {
-          color: @buttonTextColor;
-
-          background-color: @themeBgColor;
-          &.active {
-            background-color: @themeDarkerBgColor;
-          }
-
-          .fa {
-            font-size: 24px;
-            padding-left: 0px;
-            padding-right: 20px;
-          }
+        &.active {
+          display: block;
         }
       }
 
-      .surroundings-nav-wrapper {
-        background-color: @themeDarkerBgColor;
+      .lodging-wrapper,
+      .food-wrapper {
 
-        .btn {
-          background-color: transparent;
-          padding-left: 0;
-          padding-right: 0;
-
-          @fontSize: 20px;
-          line-height: @fontSize;
-
-          .fa {
-            color: @buttonTextColor;
-            font-size: @fontSize;
-          }
-        }
-
-        .surroundings-item-name {
-          font-weight: 600;
-          font-size: 18px;
-          padding: 15px 12px;
-          text-align: center;
-          color: @buttonTextColor;
-        }
-      }
-
-      .surroundings-wrapper {
-
-        background-color: @themeLighter4BgColor;
-
-        .lodging-wrapper,
-        .food-wrapper {
+        .item {
           display: none;
-
           &.active {
             display: block;
           }
-        }
 
-        .lodging-wrapper,
-        .food-wrapper {
-
-          .item {
-            display: none;
-            &.active {
-              display: block;
+          .slider {
+            img {
+              &:extend(.img-responsive all);
+              object-fit: cover;
+              width: 100%;
             }
-
-            .slider {
-              img {
-                &:extend(.img-responsive all);
-                object-fit: cover;
-                width: 100%;
-              }
-            }
+          }
+          .info {
             .address {
+              .make-xs-column(7);
+
               word-wrap: break-word;
               border-right: 1px solid #CCCCCC;
-              padding: 40px;
+              padding: 40px 0 30px 40px;
 
               strong {
                 font-family: open_sansbold, arial, sans-serif;
@@ -158,11 +187,15 @@ mobielegidsen-surroundings {
               }
             }
             .map {
+              .make-xs-column(5);
+
               font-family: nunitobold, arial, sans-serif;
               font-size: 14px;
               line-height: 1.18;
               font-weight: 400;
-              padding: 40px 20px;
+              padding-top: 36px;
+              padding-left: 20px;
+              //Note: the rest of the padding is controlled by the .address padding-bottom
 
               a {
                 color: #404040;
@@ -190,81 +223,81 @@ mobielegidsen-surroundings {
       }
     }
   }
+}
 
-  .owl-theme {
+.owl-theme {
 
-    //all images in the slider will be forced to this with (overridable)
+  //all images in the slider will be forced to this with (overridable)
+  width: 100%;
+
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
     width: 100%;
+    //see https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+    padding-top: (9 / 16) * 100%;
+  }
 
-    position: relative;
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      //see https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
-      padding-top: (9 / 16) * 100%;
+  .owl-controls {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #000000;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+
+    .owl-page span {
+      background: @buttonTextColor none repeat scroll 0 0
     }
+  }
 
+  //class that's added to the slider when a video-slide is playing
+  &.playing {
+    //hide the controls to show the controls of the video instead
     .owl-controls {
-      bottom: 0;
-      position: absolute;
-      width: 100%;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background: #000000;
-      background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-      background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-      background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-
-      .owl-page span {
-        background: @buttonTextColor none repeat scroll 0 0
-      }
+      display: none;
     }
+  }
 
-    //class that's added to the slider when a video-slide is playing
-    &.playing {
-      //hide the controls to show the controls of the video instead
-      .owl-controls {
-        display: none;
-      }
-    }
+  .owl-wrapper-outer {
 
-    .owl-wrapper-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    .owl-wrapper {
+      //force-stretch the container to its parent (for object-fit: cover)
+      height: 100%;
 
-      .owl-wrapper {
-        //force-stretch the container to its parent (for object-fit: cover)
+      .owl-item {
+        //same reason as above
         height: 100%;
 
-        .owl-item {
-          //same reason as above
+        //fix the height so it doesn't grow out of bounds on large screens
+        max-height: round(@screen-xs-max/16*9);
+        @media (min-width: @screen-sm-min) {
+          max-height: round(@screen-sm-max/16*9);
+        }
+        @media (min-width: @screen-md-min) {
+          max-height: round(@screen-md-max/16*9);
+        }
+        @media (min-width: @screen-lg-min) {
+          max-height: round(@screen-lg-min/16*9);
+        }
+
+        img {
+          width: 100%;
           height: 100%;
 
-          //fix the height so it doesn't grow out of bounds on large screens
-          max-height: round(@screen-xs-max/16*9);
-          @media (min-width: @screen-sm-min) {
-            max-height: round(@screen-sm-max/16*9);
-          }
-          @media (min-width: @screen-md-min) {
-            max-height: round(@screen-md-max/16*9);
-          }
-          @media (min-width: @screen-lg-min) {
-            max-height: round(@screen-lg-min/16*9);
-          }
-
-          img {
-            width: 100%;
-            height: 100%;
-
-            &:extend(.img-responsive all);
-            object-fit: cover;
-          }
+          &:extend(.img-responsive all);
+          object-fit: cover;
         }
       }
     }

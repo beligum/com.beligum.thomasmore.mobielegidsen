@@ -3,16 +3,27 @@
 <meta property="blocks:description" content="Standard footer" lang="en">
 <meta property="blocks:description" content="Standaard voettekst" lang="nl">
 <meta property="blocks:icon" content="fa-minus">
+<meta property="blocks:display" content="hidden">
 
 <link href="/assets/styles/imports/mobielegidsen/footer/default.less" rel="stylesheet">
 
 <template>
-    <p class="header">$MESSAGES.mobielegidsen.core.footerDefaultTitle</p>
-    <div class="buttons">
-        #set($smCurrUrl=$TOOLKIT.esc.url($REQUEST.uriInfo.requestUri))
-    ##set($smCurrUrl=$TOOLKIT.esc.url('http://rupelstreek.mobielegidsen.be/'))
-        #set($smPopupWidth=626)
-        <a href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://www.facebook.com/sharer/sharer.php?u=$smCurrUrl', $MESSAGES.mobielegidsen.core.footerShareFacebook, '$smPopupWidth', '650'); return false;"><i class="fa fa-facebook-official fa-3x social-footer"></i></a>
-        <a href="#" onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://twitter.com/intent/tweet?url=$smCurrUrl&hashtags=mobielegidsen&text=', $MESSAGES.mobielegidsen.core.footerShareTwitter, '$smPopupWidth', '300'); return false;"><i class="fa fa-twitter-square fa-3x social-footer"></i></a>
+    <div class="container">
+        <footer>
+            <p class="header">
+                $MESSAGES.mobielegidsen.core.footerDefaultTitle
+            </p>
+            <div class="buttons">
+                #set($smCurrUrl=$TOOLKIT.esc.url($REQUEST.uriInfo.requestUri))
+            ##set($smCurrUrl=$TOOLKIT.esc.url('http://rupelstreek.mobielegidsen.be/'))
+                #set($smPopupWidth=626)
+                <a href="#"
+                   onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://www.facebook.com/sharer/sharer.php?u=$smCurrUrl', $MESSAGES.mobielegidsen.core.footerShareFacebook, '$smPopupWidth', '650'); return false;"><i
+                        class="fa fa-facebook-official fa-3x social-footer"></i></a>
+                <a href="#"
+                   onclick="base.getPlugin('mobielegidsen.Main').popupCenter('https://twitter.com/intent/tweet?url=$smCurrUrl&hashtags=mobielegidsen&text=', $MESSAGES.mobielegidsen.core.footerShareTwitter, '$smPopupWidth', '300'); return false;"><i
+                        class="fa fa-twitter-square fa-3x social-footer"></i></a>
+            </div>
+        </footer>
     </div>
 </template>

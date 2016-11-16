@@ -1,0 +1,50 @@
+<meta property="blocks:title" content="Weather forecast" lang="en">
+<meta property="blocks:title" content="Weerbericht" lang="nl">
+<meta property="blocks:description" content="Local weather and forecasts" lang="en">
+<meta property="blocks:description" content="Het lokale weerbericht en de voorspellingen" lang="nl">
+<meta property="blocks:icon" content="fa-cloud">
+
+<meta property="blocks:controller" content="com.beligum.thomasmore.mobielegidsen.controllers.WeatherController">
+
+<link href="/assets/webjars/weather-icons/1.3.2/css/weather-icons.css" rel="stylesheet" type="text/css">
+<link href="/assets/styles/imports/mobielegidsen/weather.less" rel="stylesheet" type="text/css">
+
+<template>
+    <div class="today">
+        <div class="wrap">
+            <div class="icon">
+                <i class="$CONTROLLER.forecastData.today.wiIcon"></i>
+            </div>
+            <div class="text">
+                <p>
+                    $TOOLKIT.math.round($CONTROLLER.forecastData.today.main.temp)°<br/>
+                    <strong>vandaag in $CONTROLLER.forecastData.city.name</strong>: $CONTROLLER.forecastData.today.weather[0].description
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="forecast">
+        <div class="tomorrow">
+            <div class="text">
+                <p>
+                    morgen <br/>
+                    <strong>$TOOLKIT.math.round($CONTROLLER.forecastData.todayPlus1.main.temp)°</strong>
+                </p>
+            </div>
+            <div class="icon">
+                <i class="$CONTROLLER.forecastData.todayPlus1.wiIcon"></i>
+            </div>
+        </div>
+        <div class="after-tomorrow">
+            <div class="text">
+                <p>
+                    overmorgen <br/>
+                    <strong>$TOOLKIT.math.round($CONTROLLER.forecastData.todayPlus2.main.temp)°</strong>
+                </p>
+            </div>
+            <div class="icon">
+                <i class="$CONTROLLER.forecastData.todayPlus2.wiIcon"></i>
+            </div>
+        </div>
+    </div>
+</template>
